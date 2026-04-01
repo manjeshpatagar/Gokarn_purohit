@@ -20,8 +20,17 @@ export function Footer() {
             <h4 className="text-lg font-semibold text-white">{t.footer.contactHeading}</h4>
             <ul className="mt-4 space-y-3 text-sm">
               <li>{t.contactDetails.name}</li>
-              <li>{t.contactDetails.phone}</li>
-              <li>{t.contactDetails.email}</li>
+              <li>
+                <a href={`tel:${t.contactDetails.phone}`} className="inline-flex items-center gap-2 transition hover:text-white">
+                  <span>📞</span>
+                  {t.contactDetails.phone}
+                </a>
+              </li>
+              <li>
+                <a href={`mailto:${t.contactDetails.email}`} className="transition hover:text-white">
+                  {t.contactDetails.email}
+                </a>
+              </li>
               <li>{t.contactDetails.address}</li>
             </ul>
           </div>

@@ -1,29 +1,75 @@
 "use client";
 
+import Image from "next/image";
+import { useEffect, useState } from "react";
+
 import { Button } from "./Button";
 import { Container } from "./Container";
-import { imageLibrary } from "@/lib/data";
 import { useLanguage } from "./LanguageProvider";
+
+const heroImages = ["/images/hero-ganapati.png", "/images/hero-deity.png"];
 
 export function Hero() {
   const { t } = useLanguage();
+  const [activeImage, setActiveImage] = useState(0);
+  const titleParts = t.hero.title.split(" ");
+  const titleMain = titleParts.slice(0, -1).join(" ");
+  const titleAccent = titleParts.at(-1) ?? t.hero.title;
+
+  useEffect(() => {
+    const interval = window.setInterval(() => {
+      setActiveImage((current) => (current + 1) % heroImages.length);
+    }, 4000);
+
+    return () => window.clearInterval(interval);
+  }, []);
 
   return (
-    <section
-      className="relative overflow-hidden bg-stone-900"
-      style={{
-        backgroundImage: `linear-gradient(135deg, rgba(28,25,23,0.86), rgba(154,52,18,0.72)), url('${imageLibrary.hero}')`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
-      <Container className="py-24 md:py-32">
+    <section className="relative overflow-hidden bg-stone-950">
+      <div className="absolute inset-0">
+        {heroImages.map((image, index) => (
+          <div
+            key={image}
+            className="absolute inset-0 transition-opacity duration-1000 ease-in-out"
+            style={{
+              opacity: activeImage === index ? 1 : 0,
+              transform: activeImage === index ? "scale(1.05)" : "scale(1)",
+              transitionProperty: "opacity, transform",
+            }}
+          >
+            <Image
+              src={image}
+              alt=""
+              fill
+              priority={index === 0}
+              quality={100}
+              sizes="100vw"
+              className="object-cover object-center"
+            />
+          </div>
+        ))}
+      </div>
+      <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(17,24,39,0.68),rgba(120,53,15,0.42))]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(251,191,36,0.16),transparent_32%)]" />
+      <Container className="relative py-24 md:min-h-[720px] md:py-32 lg:flex lg:items-center">
         <div className="max-w-3xl">
-          <p className="mb-5 text-sm font-semibold uppercase tracking-[0.3em] text-orange-200">
+          <p className="mb-6 inline-flex rounded-full border border-amber-200/30 bg-black/25 px-4 py-2 text-[0.72rem] font-semibold uppercase tracking-[0.3em] text-orange-100 backdrop-blur-sm">
             {t.brand.subtitle}
           </p>
-          <h1 className="text-4xl font-bold leading-tight text-white md:text-6xl">
-            {t.hero.title}
+          <h1 className="max-w-4xl">
+            <span className="block text-[2.6rem] font-extrabold leading-[1.02] tracking-[0.04em] text-transparent md:text-[4.4rem] lg:text-[5.25rem]">
+              <span
+                className="bg-gradient-to-r from-amber-50 via-yellow-100 to-orange-200 bg-clip-text [text-shadow:0_12px_30px_rgba(0,0,0,0.32)]"
+                style={{ WebkitTextStroke: "0.6px rgba(120, 53, 15, 0.2)" }}
+              >
+                {titleMain}
+              </span>
+            </span>
+            <span className="mt-4 block text-2xl font-semibold leading-none tracking-[0.18em] text-amber-50 md:text-4xl lg:text-5xl">
+              <span className="inline-flex rounded-full border border-amber-200/30 bg-white/10 px-5 py-3 shadow-[0_10px_28px_rgba(0,0,0,0.24)] backdrop-blur-sm">
+                {titleAccent}
+              </span>
+            </span>
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-8 text-orange-50 md:text-lg">
             {t.hero.subtitle}

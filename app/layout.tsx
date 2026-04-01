@@ -5,7 +5,6 @@ import { Footer } from "@/components/Footer";
 import { FloatingActions } from "@/components/FloatingActions";
 import { LanguageProvider } from "@/components/LanguageProvider";
 import { Navbar } from "@/components/Navbar";
-import { TopBar } from "@/components/TopBar";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://yourdomain.com"),
@@ -44,7 +43,6 @@ export default function RootLayout({
     <html lang="kn">
       <body>
         <LanguageProvider>
-          <TopBar />
           <Navbar />
           <main className="overflow-x-hidden pb-24 md:pb-0">{children}</main>
           <Footer />

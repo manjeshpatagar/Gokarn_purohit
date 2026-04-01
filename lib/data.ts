@@ -68,12 +68,42 @@ export const trustLogos = ["Justdial", "Google", "Facebook"];
 export const areas = ["ಬೆಂಗಳೂರು", "ಮೈಸೂರು", "ಮಂಗಳೂರು", "ಹುಬ್ಬಳ್ಳಿ", "ಬೆಳಗಾವಿ", "ಶಿವಮೊಗ್ಗ"];
 
 export const galleryImages = [
-  "https://unsplash.com/photos/8Ad2NJOM_lk/download?force=true&w=900",
-  "https://unsplash.com/photos/is33jruKEiA/download?force=true&w=900",
-  "https://unsplash.com/photos/fCo0rj-cT0Y/download?force=true&w=900",
-  "https://unsplash.com/photos/ZSUEvzy0ouU/download?force=true&w=900",
-  "https://unsplash.com/photos/RAuhRwk_stU/download?force=true&w=900",
-  "https://unsplash.com/photos/DFBWKeyV0fM/download?force=true&w=900",
+  {
+    image: "/images/hero-ganapati.png",
+    title: "Ganapati Blessings",
+    subtitle: "Temple darshana and devotional offering",
+    imagePosition: "center",
+  },
+  {
+    image: "/images/hero-deity.png",
+    title: "Sacred Temple Presence",
+    subtitle: "Traditional deity worship atmosphere",
+    imagePosition: "center",
+  },
+  {
+    image: "/images/popular-ashlesha-bali.jpeg",
+    title: "Ashlesha Bali Ritual",
+    subtitle: "Original pooja setup with family participation",
+    imagePosition: "center",
+  },
+  {
+    image: "/images/popular-navagraha-puja.png",
+    title: "Navagraha Arrangement",
+    subtitle: "Planetary pooja altar prepared with devotion",
+    imagePosition: "center",
+  },
+  {
+    image: "/images/popular-pitra-puja.jpg",
+    title: "Pitra Puja Offering",
+    subtitle: "Ancestral rites performed with reverence",
+    imagePosition: "center",
+  },
+  {
+    image: "/images/popular-ganapati-homam.jpg",
+    title: "Homam Fire Ritual",
+    subtitle: "Auspicious sacred fire ceremony moment",
+    imagePosition: "center",
+  },
 ];
 
 export const reviews = [
@@ -122,42 +152,42 @@ export const blogs = [
     title: "ಗೃಹ ಪ್ರವೇಶ ಪೂಜೆಗೆ ಹೇಗೆ ಸಿದ್ಧರಾಗಬೇಕು",
     description:
       "ಹೊಸ ಮನೆಯ ಪೂರ್ವಸಿದ್ಧತೆ, ಸಾಮಗ್ರಿ ಮತ್ತು ಪೂಜೆ ಕ್ರಮದ ಸರಳ ಮಾರ್ಗದರ್ಶಿ.",
-    image: "https://unsplash.com/photos/EiscPP-cRm0/download?force=true&w=900",
+    image: "https://unsplash.com/photos/EiscPP-cRm0/download?force=true&w=1600",
   },
   {
     title: "ಸತ್ಯನಾರಾಯಣ ಪೂಜೆಗೆ ಬೇಕಾದ ಮುಖ್ಯ ಸಾಮಗ್ರಿಗಳು",
     description:
       "ಪೂರ್ಣ ಪೂಜೆಗೆ ಯಾವ ಸಾಮಗ್ರಿಗಳನ್ನು ಸಿದ್ಧವಾಗಿಡಬೇಕು ಎಂಬುದರ ಕುರಿತು ಉಪಯುಕ್ತ ಮಾಹಿತಿ.",
-    image: "https://unsplash.com/photos/fCo0rj-cT0Y/download?force=true&w=900",
+    image: "https://unsplash.com/photos/fCo0rj-cT0Y/download?force=true&w=1600",
   },
   {
     title: "ಆಧುನಿಕ ಮನೆಗಳಲ್ಲಿ ವಾಸ್ತು ಪೂಜೆಯ ಮಹತ್ವ",
     description:
       "ಹೊಸ ಮನೆಗೆ ಶುಭಶಕ್ತಿ ಮತ್ತು ಶಾಂತಿ ತರಲು ವಾಸ್ತು ಪೂಜೆ ಯಾಕೆ ಮುಖ್ಯ ಎಂಬ ವಿವರಣೆ.",
-    image: "https://unsplash.com/photos/BDGXGCy2YFQ/download?force=true&w=900",
+    image: "https://unsplash.com/photos/BDGXGCy2YFQ/download?force=true&w=1600",
   },
   {
     title: "ವಿವಾಹ ಪೂಜೆಗಳ ಕ್ರಮ ಮತ್ತು ಮಹತ್ವ",
     description:
       "ಮದುವೆ ಪೂಜೆಯ ಪ್ರಮುಖ ವಿಧಿಗಳು ಮತ್ತು ಅವುಗಳ ಅರ್ಥವನ್ನು ಸರಳವಾಗಿ ತಿಳಿದುಕೊಳ್ಳಿ.",
-    image: "https://unsplash.com/photos/jtGKb3g1WP4/download?force=true&w=900",
+    image: "https://unsplash.com/photos/jtGKb3g1WP4/download?force=true&w=1600",
   },
   {
     title: "ಶ್ರಾದ್ಧ ವಿಧಿಗಳ ಸರಳ ಪರಿಚಯ",
     description:
       "ಪಿತೃಕಾರ್ಯಗಳ ಮಹತ್ವ ಮತ್ತು ಅವನ್ನು ಶ್ರದ್ಧೆಯಿಂದ ಹೇಗೆ ಆಚರಿಸಬೇಕು ಎಂಬ ಮಾಹಿತಿ.",
-    image: "https://unsplash.com/photos/5t9ZMqCizRc/download?force=true&w=900",
+    image: "https://unsplash.com/photos/5t9ZMqCizRc/download?force=true&w=1600",
   },
   {
     title: "ಮನೆಯ ಪೂಜೆಗಳಿಗೆ ಉಪಯುಕ್ತ ಸಲಹೆಗಳು",
     description:
       "ಕುಟುಂಬದೊಂದಿಗೆ ಮನೆಯ ಪೂಜೆಯನ್ನು ಸುಗಮವಾಗಿ ಆಯೋಜಿಸಲು ಸರಳ ಸಲಹೆಗಳು.",
-    image: "https://unsplash.com/photos/8Ad2NJOM_lk/download?force=true&w=900",
+    image: "https://unsplash.com/photos/8Ad2NJOM_lk/download?force=true&w=1600",
   },
 ];
 
 export const contactDetails = {
-  name: "ಕರ್ನಾಟಕ ಪೂಜಾರಿ ಸೇವೆಗಳು",
+  name: "ಕೈವಲ್ಯ ಮುಕ್ತಿ ಕ್ಷೇತ್ರ ಗೋಕರ್ಣ",
   email: "contact@kannadapurohitdemo.com",
   phone: "+91 98765 43210",
   address: "ಬೆಂಗಳೂರು, ಕರ್ನಾಟಕ, ಭಾರತ",
