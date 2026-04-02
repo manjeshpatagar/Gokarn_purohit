@@ -50,7 +50,7 @@ const popularPoojaContent = {
         title: "Nagabali Pooje",
         description:
           "A sacred ritual traditionally performed for naga dosha remedies, ancestral peace, and the spiritual wellbeing of the family.",
-        image: "/images/popular-pitra-puja.jpg",
+        image: "/images/gallery-ashlesha-bali.jpeg",
         imagePosition: "center",
       },
       {
@@ -95,7 +95,7 @@ const popularPoojaContent = {
         title: "ನಾಗಬಲಿ ಪೂಜೆ",
         description:
           "ನಾಗದೋಷ ಪರಿಹಾರ, ಪಿತೃಶಾಂತಿ ಮತ್ತು ಕುಟುಂಬದ ಆತ್ಮಿಕ ಕ್ಷೇಮಕ್ಕಾಗಿ ಸಂಪ್ರದಾಯಬದ್ಧವಾಗಿ ಮಾಡುವ ಪವಿತ್ರ ವಿಧಿ.",
-        image: "/images/popular-pitra-puja.jpg",
+        image: "/images/gallery-ashlesha-bali.jpeg",
         imagePosition: "center",
       },
       {

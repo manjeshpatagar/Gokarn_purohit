@@ -55,10 +55,16 @@ export function AboutPageClient() {
                 </div>
                 <div className="rounded-[1.5rem] border border-orange-100 bg-orange-50/80 p-4">
                   <p className="text-xs font-semibold uppercase tracking-[0.18em] text-orange-600">{phoneLabel}</p>
-                  <a href={`tel:${t.contactDetails.phone}`} className="mt-2 inline-flex items-center gap-2 text-base font-semibold text-stone-900 transition hover:text-orange-700">
-                    <span>📞</span>
-                    {t.contactDetails.phone}
-                  </a>
+                  <div className="mt-2 flex flex-col gap-2">
+                    <a href={`tel:${t.contactDetails.phone}`} className="inline-flex items-center gap-2 text-base font-semibold text-stone-900 transition hover:text-orange-700">
+                      <span>📞</span>
+                      {t.contactDetails.phone}
+                    </a>
+                    <a href="tel:9448665756" className="inline-flex items-center gap-2 text-base font-semibold text-stone-900 transition hover:text-orange-700">
+                      <span>📞</span>
+                      9448665756
+                    </a>
+                  </div>
                 </div>
               </div>
               <div className="mt-8 flex flex-wrap gap-4">

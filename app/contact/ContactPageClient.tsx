@@ -25,6 +25,7 @@ export function ContactPageClient() {
                 <p><span className="font-semibold text-stone-900">{t.contactPage.labels.name}:</span> {t.contactDetails.name}</p>
                 <p><span className="font-semibold text-stone-900">{t.contactPage.labels.email}:</span> {t.contactDetails.email}</p>
                 <p><span className="font-semibold text-stone-900">{t.contactPage.labels.phone}:</span> {t.contactDetails.phone}</p>
+                <p><span className="font-semibold text-stone-900">{t.contactPage.labels.phone}:</span> 9448665756</p>
                 <p><span className="font-semibold text-stone-900">{t.contactPage.labels.address}:</span> {t.contactDetails.address}</p>
               </div>
               <div className="mt-8 rounded-[1.5rem] border border-dashed border-orange-200 bg-white p-5">
