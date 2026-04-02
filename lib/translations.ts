@@ -207,8 +207,9 @@ export const translations = {
     },
     pujaServicesPage: {
       eyebrow: "Kannada Purohit Services",
-      title: "ಕರ್ನಾಟಕ ಸಂಪ್ರದಾಯದ ಪೂಜೆ ಸೇವೆಗಳು",
-      subtitle: "ಗೃಹ ಪ್ರವೇಶ, ಸತ್ಯನಾರಾಯಣ, ವಿವಾಹ ಮತ್ತು ಇತರ ಪೂಜೆಗಳಿಗೆ ಶ್ರದ್ಧೆಯಿಂದ ಹಾಗೂ ಕ್ರಮಬದ್ಧವಾಗಿ ಸೇವೆ ನೀಡಲಾಗುತ್ತದೆ.",
+      title: "ಗೋಕರ್ಣದ ಸಂಪ್ರದಾಯಬದ್ಧ ಪೂಜೆ ಸೇವೆಗಳು",
+      subtitle:
+        "ಗೃಹ ಪ್ರವೇಶ, ಸತ್ಯನಾರಾಯಣ, ವಿವಾಹ ಮತ್ತು ಇತರ ಪವಿತ್ರ ಪೂಜೆಗಳಿಗೆ ಗೋಕರ್ಣದಲ್ಲಿ ಭಕ್ತಿ, ಶಾಸ್ತ್ರೋಕ್ತ ಕ್ರಮ ಮತ್ತು ಗೌರವದೊಂದಿಗೆ ಸೇವೆ ನೀಡಲಾಗುತ್ತದೆ.",
       detailEyebrow: "ಸೇವೆಗಳ ವಿವರ",
       detailTitle: "ಕುಟುಂಬಗಳು ಹೆಚ್ಚು ಕೇಳುವ ಪೂಜೆಗಳು",
       detailSubtitle: "ಪ್ರತಿ ಪೂಜೆಯ ಮಹತ್ವ ಮತ್ತು ಕ್ರಮದ ಕುರಿತು ಸರಳ ವಿವರಣೆ ಇಲ್ಲಿ ನೀಡಲಾಗಿದೆ.",
@@ -488,8 +489,9 @@ export const translations = {
     },
     pujaServicesPage: {
       eyebrow: "Kannada Purohit Services",
-      title: "Traditional Karnataka Puja Services",
-      subtitle: "Services for Griha Pravesha, Satyanarayana, weddings, and other rituals are performed with devotion and care.",
+      title: "Traditional Gokarna Puja Services",
+      subtitle:
+        "Puja services in Gokarna for Griha Pravesha, Satyanarayana, weddings, and other sacred rituals are offered with devotion, scriptural care, and respect.",
       detailEyebrow: "Service Details",
       detailTitle: "Popular Rituals Families Commonly Request",
       detailSubtitle: "Each puja is described in simple language to help families understand its importance and process.",
