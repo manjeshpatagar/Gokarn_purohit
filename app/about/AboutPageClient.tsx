@@ -7,7 +7,9 @@ import { useLanguage } from "@/components/LanguageProvider";
 import { SectionTitle } from "@/components/SectionTitle";
 
 export function AboutPageClient() {
-  const { t } = useLanguage();
+  const { lang, t } = useLanguage();
+  const addressLabel = lang === "kn" ? "ವಿಳಾಸ" : "Address";
+  const phoneLabel = lang === "kn" ? "ಫೋನ್" : "Phone";
 
   return (
     <>
@@ -48,11 +50,11 @@ export function AboutPageClient() {
               </div>
               <div className="mt-8 grid gap-4 sm:grid-cols-2">
                 <div className="rounded-[1.5rem] border border-orange-100 bg-orange-50/80 p-4">
-                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-orange-600">Address</p>
+                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-orange-600">{addressLabel}</p>
                   <p className="mt-2 text-base font-semibold text-stone-900">{t.contactDetails.address}</p>
                 </div>
                 <div className="rounded-[1.5rem] border border-orange-100 bg-orange-50/80 p-4">
-                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-orange-600">Phone</p>
+                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-orange-600">{phoneLabel}</p>
                   <a href={`tel:${t.contactDetails.phone}`} className="mt-2 inline-flex items-center gap-2 text-base font-semibold text-stone-900 transition hover:text-orange-700">
                     <span>📞</span>
                     {t.contactDetails.phone}

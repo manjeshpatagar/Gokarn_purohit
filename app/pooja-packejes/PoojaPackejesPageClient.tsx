@@ -109,6 +109,7 @@ export function PoojaPackejesPageClient() {
   const content = packageContent[lang];
   const featuredPackage = content.items[0];
   const remainingPackages = content.items.slice(1);
+  const featuredLabel = lang === "kn" ? "ವಿಶೇಷ ಪ್ಯಾಕೇಜ್" : "Featured Package";
 
   return (
     <>
@@ -136,16 +137,11 @@ export function PoojaPackejesPageClient() {
                   className="aspect-[4/3] h-full w-full object-cover transition duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-stone-950/75 via-stone-950/10 to-transparent" />
-                <div className="absolute left-5 top-5">
-                  <span className="inline-flex rounded-full border border-white/20 bg-black/20 px-3 py-1 text-xs font-semibold text-white backdrop-blur-md">
-                    01
-                  </span>
-                </div>
               </div>
               <div className="flex flex-col justify-between bg-gradient-to-b from-white to-orange-50/60 p-6 sm:p-8">
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-[0.22em] text-orange-600">
-                    Featured Package
+                    {featuredLabel}
                   </p>
                   <h2 className="mt-3 text-3xl font-bold text-stone-900">{featuredPackage.title}</h2>
                   <p className="mt-4 text-sm leading-7 text-stone-600 sm:text-base sm:leading-8">
@@ -176,11 +172,6 @@ export function PoojaPackejesPageClient() {
                     className="aspect-[4/5] h-full w-full object-cover transition duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-stone-950/10 to-transparent" />
-                  <div className="absolute left-5 top-5">
-                    <span className="inline-flex rounded-full border border-white/20 bg-black/20 px-3 py-1 text-xs font-semibold text-white backdrop-blur-md">
-                      {String(index + 2).padStart(2, "0")}
-                    </span>
-                  </div>
                 </div>
                 <div className="flex flex-1 flex-col bg-gradient-to-b from-white to-orange-50/60 p-5">
                   <h2 className="text-2xl font-bold text-stone-900">{item.title}</h2>

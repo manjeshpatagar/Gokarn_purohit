@@ -43,10 +43,15 @@ export const translations = {
     featureCards: [
       { icon: "Om", title: "ಅನುಭವಿಯ ಪೂಜಾರಿಗಳು", description: "ಗೋಕರ್ಣದ ಸಂಪ್ರದಾಯದಂತೆ ಶ್ರದ್ಧೆಯಿಂದ ಪೂಜೆಗಳನ್ನು ನೆರವೇರಿಸಲಾಗುತ್ತದೆ." },
       { icon: "Diya", title: "ಮನೆಮಾತಿನ ಸೇವೆ", description: "ಮನೆ, ಅಪಾರ್ಟ್‌ಮೆಂಟ್ ಮತ್ತು ಸಮಾರಂಭ ಸ್ಥಳಗಳಿಗೆ ಪೂಜೆ ಸೇವೆ ಲಭ್ಯ." },
-      { icon: "Bell", title: "ಟಿಫಿನ್ ಮತ್ತು ಊಟ ಲಭ್ಯ", description: "ಪೂಜಾರಿಗಳಿಗೆ ಟಿಫಿನ್ ಹಾಗೂ ಊಟದ ವ್ಯವಸ್ಥೆ ಲಭ್ಯವಿದೆ." },
-      { icon: "Kalash", title: "ವಸತಿ ಲಭ್ಯ", description: "ಗೋಕರ್ಣಕ್ಕೆ ಬರುವ ಪೂಜಾರಿಗಳಿಗೆ ವಸತಿ ವ್ಯವಸ್ಥೆ ಲಭ್ಯವಿದೆ." },
+      { icon: "Bell", title: "ಟಿಫಿನ್ ಮತ್ತು ಊಟ ಲಭ್ಯ", description: "ಭಕ್ತಾದಿಗಳಿಗೆ ಟಿಫಿನ್ ಹಾಗೂ ಊಟದ ವ್ಯವಸ್ಥೆ ಲಭ್ಯವಿದೆ." },
+      { icon: "Kalash", title: "ವಸತಿ ಲಭ್ಯ", description: "ಭಕ್ತಾದಿಗಳಿಗೆ ವಸತಿ ವ್ಯವಸ್ಥೆ ಲಭ್ಯವಿದೆ." },
     ],
     servicesList: [
+      "ಪಿತೃ ಪೂಜೆ",
+      "ಮೋಕ್ಷ ನಾರಾಯಣ ನಾಗಬಲಿ ಪೂಜೆ",
+      "ತ್ರಿಪಿಂಡಿ ಶ್ರಾದ್ಧ",
+      "ನಾಗಬಲಿ ಪೂಜೆ",
+      "ನವಗ್ರಹ ಪೂಜೆ",
       "ಪ್ರಾಯಶ್ಚಿತ್ತ ತಿಲ ಹವನ",
       "ನಾರಾಯಣ ಬಲಿ ಹೋಮ",
       "ಗಣೇಶ ಪೂಜೆ, ರುದ್ರಾಭಿಷೇಕ ಮತ್ತು ಹವನ",
@@ -59,7 +64,6 @@ export const translations = {
       "ವಾಸ್ತು ಪೂಜೆ",
       "ಗಣೇಶ ಪೂಜೆ",
       "ಲಕ್ಷ್ಮೀ ಪೂಜೆ",
-      "ನವಗ್ರಹ ಪೂಜೆ",
     ],
     detailedServices: [
       {
@@ -283,7 +287,7 @@ export const translations = {
     },
     contactDetails: {
       name: "ವಿಶ್ವನಾಥ ಶಂಕರಲಿಂಗ",
-      email: "contact@kannadapurohitdemo.com",
+      email: "vshbhat@gmail.com",
       phone: "+91 98860 17521",
       address: "ಗೋಕರ್ಣ, ಕರ್ನಾಟಕ, ಭಾರತ",
     },
@@ -330,10 +334,15 @@ export const translations = {
     featureCards: [
       { icon: "Om", title: "Experienced Priests", description: "Traditional Gokarna rituals performed with devotion and clarity." },
       { icon: "Diya", title: "Home Visits", description: "Puja services available for homes, apartments, and event venues." },
-      { icon: "Bell", title: "Tiffin And Lunch Available", description: "Tiffin and lunch arrangements are available for purohits." },
-      { icon: "Kalash", title: "Stay Available", description: "Stay facilities are available for purohits visiting Gokarna." },
+      { icon: "Bell", title: "Tiffin And Lunch Available", description: "Tiffin and lunch arrangements are available for bhaktadigalu." },
+      { icon: "Kalash", title: "Stay Available", description: "Stay facilities are available for bhaktadigalu visiting Gokarna." },
     ],
     servicesList: [
+      "Pitra Pooja",
+      "Moksha Narayana Nagabali Pooja",
+      "Tripindi Shradda",
+      "Nagabali Pooje",
+      "Navagraha Pooja",
       "Prayaschitta Tila Havana",
       "Narayana Bali Homam",
       "Ganesh Pooja, Rudrabhisheka And Havana",
@@ -346,7 +355,6 @@ export const translations = {
       "Vastu Puja",
       "Ganesha Puja",
       "Lakshmi Puja",
-      "Navagraha Puja",
     ],
     detailedServices: [
       {
@@ -570,7 +578,7 @@ export const translations = {
     },
     contactDetails: {
       name: "Visvanath Shankar Linga",
-      email: "contact@kannadapurohitdemo.com",
+      email: "vshbhat@gmail.com",
       phone: "+91 98860 17521",
       address: "Gokarna, Karnataka, India",
     },

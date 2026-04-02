@@ -26,25 +26,25 @@ const popularPoojaContent = {
     choiceLabel: "Popular Choice",
     items: [
       {
-        title: "Ashlesha Bali Pooja",
-        description:
-          "A sacred ritual traditionally performed for naga dosha relief, family wellbeing, and spiritual peace with deep devotion.",
-        image: "/images/popular-ashlesha-bali.jpeg",
-        imagePosition: "center",
-      },
-      {
-        title: "Navagraha Pooja",
-        description:
-          "A powerful pooja offered to the nine planets to invite harmony, remove obstacles, and strengthen positive life energy.",
-        image: "/images/popular-navagraha-puja.png",
-        imagePosition: "center 35%",
-      },
-      {
-        title: "Pitra Puja",
+        title: "Pitra Pooja",
         description:
           "A respectful ancestral ritual performed for blessings, peace of forefathers, and spiritual balance in the family.",
         image: "/images/popular-pitra-puja.jpg",
         imagePosition: "center 38%",
+      },
+      {
+        title: "Moksha Narayana Nagabali Pooja",
+        description:
+          "A deeply significant ritual performed with devotion for ancestral blessings, peace to departed souls, and spiritual relief from unresolved family karmas.",
+        image: "/images/popular-ashlesha-bali.jpeg",
+        imagePosition: "center 28%",
+      },
+      {
+        title: "Tripindi Shradda",
+        description:
+          "A traditional shradda ritual performed with scriptural care for ancestral peace, unresolved family doshas, and spiritual relief.",
+        image: "/images/pooja-shraddha.jpeg",
+        imagePosition: "center",
       },
       {
         title: "Nagabali Pooje",
@@ -54,11 +54,11 @@ const popularPoojaContent = {
         imagePosition: "center",
       },
       {
-        title: "Moksha Narayana Bali Pooja",
+        title: "Navagraha Pooja",
         description:
-          "A deeply significant ritual performed with devotion for ancestral blessings, peace to departed souls, and spiritual relief from unresolved family karmas.",
-        image: "/images/popular-ashlesha-bali.jpeg",
-        imagePosition: "center 28%",
+          "A powerful pooja offered to the nine planets to invite harmony, remove obstacles, and strengthen positive life energy.",
+        image: "/images/popular-navagraha-puja.png",
+        imagePosition: "center 35%",
       },
     ],
   },
@@ -71,25 +71,25 @@ const popularPoojaContent = {
     choiceLabel: "ಜನಪ್ರಿಯ ಆಯ್ಕೆ",
     items: [
       {
-        title: "ಅಶ್ಲೇಷ ಬಲಿ ಪೂಜೆ",
-        description:
-          "ನಾಗದೋಷ ನಿವಾರಣೆ, ಕುಟುಂಬದ ಕಲ್ಯಾಣ ಮತ್ತು ಆತ್ಮಿಕ ಶಾಂತಿಗಾಗಿ ಭಕ್ತಿಯಿಂದ ನೆರವೇರಿಸಲಾಗುವ ಪವಿತ್ರ ಪೂಜೆ.",
-        image: "/images/popular-ashlesha-bali.jpeg",
-        imagePosition: "center",
-      },
-      {
-        title: "ನವಗ್ರಹ ಪೂಜೆ",
-        description:
-          "ಒಂಬತ್ತು ಗ್ರಹಗಳ ಅನುಗ್ರಹಕ್ಕಾಗಿ, ಅಡಚಣೆಗಳನ್ನು ದೂರಿಸಲು ಮತ್ತು ಸಕಾರಾತ್ಮಕ ಜೀವನಶಕ್ತಿಯನ್ನು ಹೆಚ್ಚಿಸಲು ನೆರವೇರಿಸುವ ಶಕ್ತಿಯುತ ಪೂಜೆ.",
-        image: "/images/popular-navagraha-puja.png",
-        imagePosition: "center 35%",
-      },
-      {
         title: "ಪಿತೃ ಪೂಜೆ",
         description:
           "ಪೂರ್ವಜರ ಆಶೀರ್ವಾದ, ಅವರ ಆತ್ಮಶಾಂತಿ ಮತ್ತು ಕುಟುಂಬದ ಆತ್ಮಿಕ ಸಮತೋಲನಕ್ಕಾಗಿ ಗೌರವದಿಂದ ನೆರವೇರಿಸುವ ಪೂಜೆ.",
         image: "/images/popular-pitra-puja.jpg",
         imagePosition: "center 38%",
+      },
+      {
+        title: "ಮೋಕ್ಷ ನಾರಾಯಣ ನಾಗಬಲಿ ಪೂಜೆ",
+        description:
+          "ಪಿತೃಗಳ ಅನುಗ್ರಹ, ಅಗಲಿದ ಆತ್ಮಗಳ ಶಾಂತಿ ಮತ್ತು ಕುಟುಂಬದ ಅನಿರ್ವಚಿತ ಕರ್ಮಗಳಿಂದ ಆತ್ಮಿಕ ಪರಿಹಾರಕ್ಕಾಗಿ ಭಕ್ತಿಯಿಂದ ನೆರವೇರಿಸುವ ಮಹತ್ವದ ಪೂಜೆ.",
+        image: "/images/popular-ashlesha-bali.jpeg",
+        imagePosition: "center 28%",
+      },
+      {
+        title: "ತ್ರಿಪಿಂಡಿ ಶ್ರಾದ್ಧ",
+        description:
+          "ಪಿತೃಶಾಂತಿ, ಕುಟುಂಬದ ದೋಷ ನಿವಾರಣೆ ಮತ್ತು ಆತ್ಮಿಕ ನೆಮ್ಮದಿಗಾಗಿ ಶಾಸ್ತ್ರೋಕ್ತವಾಗಿ ನೆರವೇರಿಸುವ ಶ್ರಾದ್ಧ ವಿಧಿ.",
+        image: "/images/pooja-shraddha.jpeg",
+        imagePosition: "center",
       },
       {
         title: "ನಾಗಬಲಿ ಪೂಜೆ",
@@ -99,11 +99,11 @@ const popularPoojaContent = {
         imagePosition: "center",
       },
       {
-        title: "ಮೋಕ್ಷ ನಾರಾಯಣ ಬಲಿ ಪೂಜೆ",
+        title: "ನವಗ್ರಹ ಪೂಜೆ",
         description:
-          "ಪಿತೃಗಳ ಅನುಗ್ರಹ, ಅಗಲಿದ ಆತ್ಮಗಳ ಶಾಂತಿ ಮತ್ತು ಕುಟುಂಬದ ಅನಿರ್ವಚಿತ ಕರ್ಮಗಳಿಂದ ಆತ್ಮಿಕ ಪರಿಹಾರಕ್ಕಾಗಿ ಭಕ್ತಿಯಿಂದ ನೆರವೇರಿಸುವ ಮಹತ್ವದ ಪೂಜೆ.",
-        image: "/images/popular-ashlesha-bali.jpeg",
-        imagePosition: "center 28%",
+          "ಒಂಬತ್ತು ಗ್ರಹಗಳ ಅನುಗ್ರಹಕ್ಕಾಗಿ, ಅಡಚಣೆಗಳನ್ನು ದೂರಿಸಲು ಮತ್ತು ಸಕಾರಾತ್ಮಕ ಜೀವನಶಕ್ತಿಯನ್ನು ಹೆಚ್ಚಿಸಲು ನೆರವೇರಿಸುವ ಶಕ್ತಿಯುತ ಪೂಜೆ.",
+        image: "/images/popular-navagraha-puja.png",
+        imagePosition: "center 35%",
       },
     ],
   },
@@ -112,6 +112,12 @@ const popularPoojaContent = {
 export function HomePageClient() {
   const { lang, t } = useLanguage();
   const popularPoojas = popularPoojaContent[lang];
+  const sacredPlaceLabel = lang === "kn" ? "ಪವಿತ್ರ ಸ್ಥಳ" : "Sacred Place";
+  const templeAreaLabel = lang === "kn" ? "ದೇವಸ್ಥಾನ ಪಟ್ಟಣ ಸೇವಾ ಪ್ರದೇಶ" : "Temple town service area";
+  const gokarnaAreaBody =
+    lang === "kn"
+      ? "ನಾವು ಪ್ರಸ್ತುತ ಗೋಕರ್ಣದಲ್ಲಿ ಪೂಜೆ ಸೇವೆಗಳಿಗೆ ಹೆಚ್ಚು ಗಮನ ಹರಿಸುತ್ತಿದ್ದೇವೆ. ಇಲ್ಲಿ ಸಂಪ್ರದಾಯಬದ್ಧ ವಿಧಿಗಳು, ದೇವಸ್ಥಾನ ಸಂಬಂಧಿತ ಆಧ್ಯಾತ್ಮಿಕ ಮಾರ್ಗದರ್ಶನ ಮತ್ತು ಗೌರವಯುತ ಕುಟುಂಬ ಪೂಜೆಗಳು ನೆರವೇರಿಸಲಾಗುತ್ತದೆ."
+      : "We currently focus our puja services in Gokarna, offering traditional rituals, temple-connected spiritual guidance, and respectful family ceremonies in this sacred devotional setting.";
 
   return (
     <>
@@ -122,7 +128,7 @@ export function HomePageClient() {
         title={t.home.aboutTitle}
         subtitle={t.home.aboutSubtitle}
         body={t.home.aboutBody}
-        image="/images/hero-deity.png"
+        image="/images/home-about-ritual.jpeg"
         imageAlt="Devotional Gokarna temple ritual"
         buttonLabel={t.home.aboutButton}
         buttonHref="/about"
@@ -147,9 +153,6 @@ export function HomePageClient() {
                 <div className="absolute inset-x-5 top-5 z-20 flex items-center justify-between">
                   <span className="inline-flex rounded-full border border-white/20 bg-black/20 px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.24em] text-white backdrop-blur-md">
                     {popularPoojas.ritualLabel}
-                  </span>
-                  <span className="rounded-full bg-white/18 px-3 py-1 text-xs font-semibold text-white backdrop-blur-md">
-                    0{index + 1}
                   </span>
                 </div>
                 <div className="relative aspect-[4/5] overflow-hidden">
@@ -243,16 +246,16 @@ export function HomePageClient() {
               </div>
               <div className="p-6 sm:p-8">
                 <p className="text-xs font-semibold uppercase tracking-[0.24em] text-orange-600">
-                  Sacred Place
+                  {sacredPlaceLabel}
                 </p>
                 <h3 className="mt-3 text-3xl font-black text-stone-900 sm:text-4xl">
                   Gokarna
                 </h3>
                 <p className="mt-5 text-sm leading-7 text-stone-600 sm:text-base sm:leading-8">
-                  We currently focus our puja services in Gokarna, offering traditional rituals, temple-connected spiritual guidance, and respectful family ceremonies in this sacred devotional setting.
+                  {gokarnaAreaBody}
                 </p>
                 <div className="mt-6 inline-flex rounded-full border border-orange-100 bg-orange-50 px-4 py-2 text-sm font-semibold text-orange-700">
-                  Temple town service area
+                  {templeAreaLabel}
                 </div>
               </div>
             </div>

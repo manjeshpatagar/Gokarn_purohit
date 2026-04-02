@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 import { BookingForm } from "@/components/BookingForm";
 import { Container } from "@/components/Container";
 import { useLanguage } from "@/components/LanguageProvider";
@@ -7,18 +9,22 @@ import { SectionTitle } from "@/components/SectionTitle";
 
 const serviceCardImages = [
   "/images/popular-pitra-puja.jpg",
-  "/images/popular-ashlesha-bali.jpeg",
-  "/images/popular-ganapati-homam.jpg",
+  "/images/gallery-tripindi-narayana-bali.jpeg",
+  "/images/gallery-tripindi-narayana-bali.jpeg",
+  "/images/popular-pitra-puja.jpg",
+  "/images/gallery-navagraha-pooja.jpeg",
+  "/images/gallery-prayaschitta-tila-homa.jpeg",
+  "/images/gallery-tripindi-narayana-bali.jpeg",
+  "/images/gallery-ganapati-pooja.jpeg",
   "/images/pooja-griha-pravesha.jpeg",
   "/images/gallery-purohit-1.jpeg",
   "/images/pooja-vivaha.png",
   "/images/gallery-purohit-2.jpeg",
   "/images/gallery-purohit-3.jpeg",
   "/images/pooja-shraddha.jpeg",
-  "/images/service-vastu.svg",
+  "/images/gallery-vastu-pooja.jpeg",
   "/images/hero-gokarna-ganapati.jpeg",
   "/images/popular-lakshmi-pooja.jpeg",
-  "/images/popular-navagraha-puja.png",
 ];
 
 export function PujaServicesPageClient() {
@@ -55,17 +61,17 @@ export function PujaServicesPageClient() {
                 style={{ animation: `serviceFloat 5s ease-in-out ${index * 0.14}s infinite` }}
               >
                 <div className="relative overflow-hidden">
-                  <img
-                    src={serviceCardImages[index % serviceCardImages.length]}
-                    alt={service}
-                    className="aspect-[4/5] h-full w-full object-cover transition duration-700 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-stone-950/12 to-transparent" />
-                  <div className="absolute left-5 top-5">
-                    <span className="inline-flex rounded-full border border-white/20 bg-black/25 px-3 py-1 text-xs font-semibold text-white backdrop-blur-md">
-                      {String(index + 1).padStart(2, "0")}
-                    </span>
+                  <div className="relative aspect-[4/5]">
+                    <Image
+                      src={serviceCardImages[index % serviceCardImages.length]}
+                      alt={service}
+                      fill
+                      quality={100}
+                      sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 25vw"
+                      className="object-cover transition duration-700 group-hover:scale-110"
+                    />
                   </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-stone-950/12 to-transparent" />
                 </div>
                 <div className="bg-gradient-to-b from-white to-orange-50/70 p-5">
                   <h3 className="text-lg font-bold leading-7 text-stone-900 sm:text-xl">{service}</h3>

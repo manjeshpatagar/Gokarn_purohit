@@ -7,7 +7,12 @@ import { SectionTitle } from "./SectionTitle";
 import { useLanguage } from "./LanguageProvider";
 
 export function ServicesSection() {
-  const { t } = useLanguage();
+  const { lang, t } = useLanguage();
+  const sectionBadge = lang === "kn" ? "ಪವಿತ್ರ ಸೇವೆಗಳು" : "Sacred Services";
+  const sectionBlurb =
+    lang === "kn"
+      ? "ಮನೆ, ದೇವಸ್ಥಾನ ಮತ್ತು ಕುಟುಂಬ ಸಮಾರಂಭಗಳಿಗೆ ಸಂಪ್ರದಾಯಬದ್ಧ ಪೂಜೆಗಳು"
+      : "Traditional rituals for homes, temples, and family occasions";
 
   return (
     <section className="relative overflow-hidden bg-[linear-gradient(180deg,#fff8f1_0%,#fff4e8_38%,#ffffff_100%)] py-16 md:py-20">
@@ -40,10 +45,10 @@ export function ServicesSection() {
           <div className="relative overflow-hidden rounded-[2rem] border border-amber-100/80 bg-white/70 p-3 shadow-[0_26px_80px_rgba(120,53,15,0.12)] backdrop-blur-sm">
             <div className="absolute inset-x-6 top-6 z-10 rounded-[1.25rem] border border-white/15 bg-black/20 px-4 py-3 backdrop-blur-sm">
               <p className="text-xs font-semibold uppercase tracking-[0.24em] text-orange-100">
-                Sacred Services
+                {sectionBadge}
               </p>
               <p className="mt-2 text-lg font-semibold text-white">
-                Traditional rituals for homes, temples, and family occasions
+                {sectionBlurb}
               </p>
             </div>
             <div className="overflow-hidden rounded-[1.5rem]">
