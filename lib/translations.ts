@@ -35,16 +35,20 @@ export const translations = {
       eyebrow: "Kannada Purohit Services",
       title: "ಕೈವಲ್ಯ ಮುಕ್ತಿ ಕ್ಷೇತ್ರ ಗೋಕರ್ಣ",
       subtitle: "ಸಂಪ್ರದಾಯಬದ್ಧವಾಗಿ ಮತ್ತು ಶ್ರದ್ಧೆಯಿಂದ ಪೂಜೆಗಳನ್ನು ನೆರವೇರಿಸಲಾಗುತ್ತದೆ",
+      designation: "Pradhana Archakaru Gokarna",
       callBtn: "📞 ಕರೆ ಮಾಡಿ",
       whatsappBtn: "💬 ವಾಟ್ಸಾಪ್ ಮಾಡಿ",
     },
     featureCards: [
-      { icon: "Om", title: "ಅನುಭವಿಯ ಪೂಜಾರಿಗಳು", description: "ಕರ್ನಾಟಕ ಸಂಪ್ರದಾಯದಂತೆ ಶ್ರದ್ಧೆಯಿಂದ ಪೂಜೆಗಳನ್ನು ನೆರವೇರಿಸಲಾಗುತ್ತದೆ." },
+      { icon: "Om", title: "ಅನುಭವಿಯ ಪೂಜಾರಿಗಳು", description: "ಗೋಕರ್ಣದ ಸಂಪ್ರದಾಯದಂತೆ ಶ್ರದ್ಧೆಯಿಂದ ಪೂಜೆಗಳನ್ನು ನೆರವೇರಿಸಲಾಗುತ್ತದೆ." },
       { icon: "Diya", title: "ಮನೆಮಾತಿನ ಸೇವೆ", description: "ಮನೆ, ಅಪಾರ್ಟ್‌ಮೆಂಟ್ ಮತ್ತು ಸಮಾರಂಭ ಸ್ಥಳಗಳಿಗೆ ಪೂಜೆ ಸೇವೆ ಲಭ್ಯ." },
-      { icon: "Bell", title: "ಸರಳ ಮಾರ್ಗದರ್ಶನ", description: "ಪ್ರತಿ ಪೂಜೆಯ ವಿಧಿಗಳನ್ನು ಸುಲಭವಾಗಿ ಅರ್ಥವಾಗುವಂತೆ ತಿಳಿಸಲಾಗುತ್ತದೆ." },
-      { icon: "Kalash", title: "ಸುಲಭ ಬುಕ್ಕಿಂಗ್", description: "ದಿನಾಂಕ, ಸಮಯ ಮತ್ತು ಸಾಮಗ್ರಿಗಳ ಬಗ್ಗೆ ಸುಗಮ ಸಮನ್ವಯ." },
+      { icon: "Bell", title: "ಟಿಫಿನ್ ಮತ್ತು ಊಟ ಲಭ್ಯ", description: "ಪೂಜಾರಿಗಳಿಗೆ ಟಿಫಿನ್ ಹಾಗೂ ಊಟದ ವ್ಯವಸ್ಥೆ ಲಭ್ಯವಿದೆ." },
+      { icon: "Kalash", title: "ವಸತಿ ಲಭ್ಯ", description: "ಗೋಕರ್ಣಕ್ಕೆ ಬರುವ ಪೂಜಾರಿಗಳಿಗೆ ವಸತಿ ವ್ಯವಸ್ಥೆ ಲಭ್ಯವಿದೆ." },
     ],
     servicesList: [
+      "ಪ್ರಾಯಶ್ಚಿತ್ತ ತಿಲ ಹವನ",
+      "ನಾರಾಯಣ ಬಲಿ ಹೋಮ",
+      "ಗಣೇಶ ಪೂಜೆ, ರುದ್ರಾಭಿಷೇಕ ಮತ್ತು ಹವನ",
       "ಗೃಹ ಪ್ರವೇಶ ಪೂಜೆ",
       "ಸತ್ಯನಾರಾಯಣ ಪೂಜೆ",
       "ವಿವಾಹ ಪೂಜೆ",
@@ -70,7 +74,7 @@ export const translations = {
       {
         title: "ವಿವಾಹ ಪೂಜೆ",
         description:
-          "ವಿವಾಹ ಪೂಜೆಗಳು ಕರ್ನಾಟಕ ಸಂಪ್ರದಾಯದಂತೆ ಮಂಗಳಕರವಾಗಿ ನೆರವೇರಿಸಲಾಗುತ್ತದೆ. ಕುಟುಂಬದ ಎಲ್ಲರಿಗೂ ಅರ್ಥವಾಗುವಂತೆ ಮಂತ್ರೋಚ್ಚಾರಣೆ ಮತ್ತು ಕ್ರಮಬದ್ಧ ಮಾರ್ಗದರ್ಶನ ನೀಡಲಾಗುತ್ತದೆ.",
+          "ವಿವಾಹ ಪೂಜೆಗಳು ಗೋಕರ್ಣದ ಸಂಪ್ರದಾಯದಂತೆ ಮಂಗಳಕರವಾಗಿ ನೆರವೇರಿಸಲಾಗುತ್ತದೆ. ಕುಟುಂಬದ ಎಲ್ಲರಿಗೂ ಅರ್ಥವಾಗುವಂತೆ ಮಂತ್ರೋಚ್ಚಾರಣೆ ಮತ್ತು ಕ್ರಮಬದ್ಧ ಮಾರ್ಗದರ್ಶನ ನೀಡಲಾಗುತ್ತದೆ.",
       },
       {
         title: "ಶ್ರಾದ್ಧ",
@@ -150,7 +154,7 @@ export const translations = {
       {
         question: "ನೀವು ಯಾವ ಪ್ರದೇಶಗಳಲ್ಲಿ ಸೇವೆ ನೀಡುತ್ತೀರಿ?",
         answer:
-          "ಬೆಂಗಳೂರು, ಮೈಸೂರು, ಮಂಗಳೂರು, ಹುಬ್ಬಳ್ಳಿ, ಬೆಳಗಾವಿ ಮತ್ತು ಶಿವಮೊಗ್ಗ ಸೇರಿದಂತೆ ಕರ್ನಾಟಕದ ವಿವಿಧ ಪ್ರದೇಶಗಳಲ್ಲಿ ಸೇವೆ ನೀಡಲಾಗುತ್ತದೆ.",
+          "ಗೋಕರ್ಣ ಮತ್ತು ಸುತ್ತಮುತ್ತಲಿನ ಪ್ರದೇಶಗಳಲ್ಲಿ ಪೂಜೆ ಸೇವೆ ನೀಡಲಾಗುತ್ತದೆ.",
       },
     ],
     blogsData: [
@@ -176,13 +180,13 @@ export const translations = {
       shortAboutTitle: "Kannada-first ಅನುಭವದೊಂದಿಗೆ ಸುಂದರ ವಿನ್ಯಾಸ",
       shortAboutSubtitle: "ಸರಳ ಭಾಷೆ, ಸಂಪ್ರದಾಯದ ಸ್ಪರ್ಶ ಮತ್ತು ಸ್ವಚ್ಛ ವಿನ್ಯಾಸ",
       shortAboutBody:
-        "ಈ ವೆಬ್‌ಸೈಟ್ ಕರ್ನಾಟಕದ ಸ್ಥಳೀಯ ಪೂಜಾರಿ ಸೇವೆಯ ಅನುಭವವನ್ನು ನೀಡುವಂತೆ ವಿನ್ಯಾಸಗೊಳಿಸಲಾಗಿದೆ. ಮೊಬೈಲ್ ಮತ್ತು ಡೆಸ್ಕ್‌ಟಾಪ್ ಎರಡರಲ್ಲೂ ಸುಲಭವಾಗಿ ಓದಲು ಮತ್ತು ಬಳಸಲು ಸಾಧ್ಯವಾಗುತ್ತದೆ.",
+        "ಈ ವೆಬ್‌ಸೈಟ್ ಗೋಕರ್ಣದ ಸ್ಥಳೀಯ ಪೂಜಾರಿ ಸೇವೆಯ ಅನುಭವವನ್ನು ನೀಡುವಂತೆ ವಿನ್ಯಾಸಗೊಳಿಸಲಾಗಿದೆ. ಮೊಬೈಲ್ ಮತ್ತು ಡೆಸ್ಕ್‌ಟಾಪ್ ಎರಡರಲ್ಲೂ ಸುಲಭವಾಗಿ ಓದಲು ಮತ್ತು ಬಳಸಲು ಸಾಧ್ಯವಾಗುತ್ತದೆ.",
       areasTitle: "ನಾವು ಸೇವೆ ನೀಡುವ ಸ್ಥಳಗಳು",
-      areasSubtitle: "ಕರ್ನಾಟಕದ ಪ್ರಮುಖ ನಗರಗಳಲ್ಲಿ ಪೂಜೆ ಸೇವೆಗಳು ಲಭ್ಯ.",
+      areasSubtitle: "ಗೋಕರ್ಣ ಮತ್ತು ಸಮೀಪದ ಪ್ರದೇಶಗಳಲ್ಲಿ ಪೂಜೆ ಸೇವೆಗಳು ಲಭ್ಯ.",
     },
     servicesSection: {
       eyebrow: "ಪೂಜೆ ಸೇವೆಗಳು",
-      title: "ಕರ್ನಾಟಕ ಸಂಪ್ರದಾಯದ ಪೂಜೆಗಳು ಮತ್ತು ವಿಧಿಗಳು",
+      title: "ಗೋಕರ್ಣದ ಸಂಪ್ರದಾಯದ ಪೂಜೆಗಳು ಮತ್ತು ವಿಧಿಗಳು",
       subtitle: "ಮನೆ ಪೂಜೆಗಳಿಂದ ಕುಟುಂಬದ ಪ್ರಮುಖ ಸಂಭ್ರಮಗಳವರೆಗೆ, ಪ್ರತಿಯೊಂದು ಸೇವೆಯೂ ಶ್ರದ್ಧೆ ಮತ್ತು ಕ್ರಮಬದ್ಧತೆಯೊಂದಿಗೆ ನಡೆಸಲಾಗುತ್ತದೆ.",
     },
     gallery: {
@@ -223,7 +227,7 @@ export const translations = {
       subtitle: "ಪೂಜೆ ಸೇವೆಗಳ ನಂತರ ಕುಟುಂಬಗಳು ಹಂಚಿಕೊಂಡ ಅನುಭವಗಳು.",
     },
     aboutPage: {
-      title: "ವಿಶ್ವನಾಥ ಶಂಕರ ಲಿಂಗ",
+      title: "ವಿಶ್ವನಾಥ ಶಂಕರಲಿಂಗ",
       subtitle: "ಪ್ರಧಾನ ಅರ್ಚಕರು, ಗಣಪತಿ ದೇವಸ್ಥಾನ ಮತ್ತು ಮಹಾಬಲೇಶ್ವರ ದೇವಸ್ಥಾನ",
       intro:
         "ಗೋಕರ್ಣದ ಆಧ್ಯಾತ್ಮಿಕ ಪರಂಪರೆಯೊಂದಿಗೆ ನಿಕಟವಾಗಿ ಸಂಪರ್ಕ ಹೊಂದಿರುವ ವಿಶ್ವನಾಥ ಶಂಕರ ಲಿಂಗ ಅವರು ಭಕ್ತಿ, ಶಾಂತಿ ಮತ್ತು ಶಾಸ್ತ್ರೋಕ್ತ ಕ್ರಮದೊಂದಿಗೆ ಪೂಜೆಗಳನ್ನು ನೆರವೇರಿಸುತ್ತಾರೆ. ಕುಟುಂಬಗಳಿಗೆ ಸರಳ ಮಾರ್ಗದರ್ಶನದೊಂದಿಗೆ ಪರಂಪರೆಯ ಸೇವೆಯನ್ನು ನೀಡುವುದು ಇವರ ಪ್ರಮುಖ ಧ್ಯೇಯವಾಗಿದೆ.",
@@ -242,7 +246,7 @@ export const translations = {
         "ಗೋಕರ್ಣದ ಧಾರ್ಮಿಕ ವಾತಾವರಣದಲ್ಲಿ ಕುಟುಂಬಗಳಿಗೆ ಶ್ರದ್ಧಾಪೂರ್ವಕ ಪೂಜೆ ಅನುಭವ ಒದಗಿಸುವುದು ನಮ್ಮ ಉದ್ದೇಶ. ಸರಳ ಸಂವಹನ, ಸಮಯಪಾಲನೆ ಮತ್ತು ಗೌರವಯುತ ಸೇವೆ ಮೂಲಕ ಕುಟುಂಬಗಳು ನೆಮ್ಮದಿಯಿಂದ ಪೂಜೆಗಳಲ್ಲಿ ಭಾಗವಹಿಸಬಹುದು.",
       bookingTitle: "ಪೂಜೆ ಬುಕ್ ಮಾಡಿ ಅಥವಾ ಮಾರ್ಗದರ್ಶನ ಕೇಳಿ",
       bookingSubtitle: "ಈ ಪುಟದ ಕೊನೆಯಲ್ಲಿ ಬುಕ್ಕಿಂಗ್ ಫಾರ್ಮ್ ಲಭ್ಯವಿದೆ.",
-      imageAlt: "ಕರ್ನಾಟಕ ಪೂಜಾರಿ ಸೇವೆಗಳ ಚಿತ್ರ",
+      imageAlt: "ಗೋಕರ್ಣ ಪೂಜಾರಿ ಸೇವೆಗಳ ಚಿತ್ರ",
     },
     contactPage: {
       title: "ಪೂಜೆ ಬುಕ್ಕಿಂಗ್‌ಗೆ ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ",
@@ -277,7 +281,7 @@ export const translations = {
       copyright: "Copyright 2026 ಕೈವಲ್ಯ ಮುಕ್ತಿ ಕ್ಷೇತ್ರ ಗೋಕರ್ಣ.",
     },
     contactDetails: {
-      name: "ವಿಶ್ವನಾಥ ಶಂಕರ ಲಿಂಗ",
+      name: "ವಿಶ್ವನಾಥ ಶಂಕರಲಿಂಗ",
       email: "contact@kannadapurohitdemo.com",
       phone: "+91 98860 17521",
       address: "ಗೋಕರ್ಣ, ಕರ್ನಾಟಕ, ಭಾರತ",
@@ -317,16 +321,20 @@ export const translations = {
       eyebrow: "Kannada Purohit Services",
       title: "kaivalya mukti kshetra gokarna",
       subtitle: "Performing traditional rituals with devotion and purity",
+      designation: "Pradhana Archakaru Gokarna",
       callBtn: "📞 Call Now",
       whatsappBtn: "💬 WhatsApp",
     },
     featureCards: [
-      { icon: "Om", title: "Experienced Priests", description: "Traditional Karnataka rituals performed with devotion and clarity." },
+      { icon: "Om", title: "Experienced Priests", description: "Traditional Gokarna rituals performed with devotion and clarity." },
       { icon: "Diya", title: "Home Visits", description: "Puja services available for homes, apartments, and event venues." },
-      { icon: "Bell", title: "Easy Guidance", description: "Simple step-by-step guidance for every family ceremony." },
-      { icon: "Kalash", title: "Flexible Booking", description: "Smooth coordination for dates, timings, and puja materials." },
+      { icon: "Bell", title: "Tiffin And Lunch Available", description: "Tiffin and lunch arrangements are available for purohits." },
+      { icon: "Kalash", title: "Stay Available", description: "Stay facilities are available for purohits visiting Gokarna." },
     ],
     servicesList: [
+      "Prayaschitta Tila Havana",
+      "Narayana Bali Homam",
+      "Ganesh Pooja, Rudrabhisheka And Havana",
       "Griha Pravesha",
       "Satyanarayana Puja",
       "Wedding Rituals",
@@ -352,7 +360,7 @@ export const translations = {
       {
         title: "Wedding Rituals",
         description:
-          "Wedding pujas are performed according to Karnataka traditions with proper chanting and clear guidance so both families can participate with comfort and confidence.",
+          "Wedding pujas are performed according to Gokarna traditions with proper chanting and clear guidance so both families can participate with comfort and confidence.",
       },
       {
         title: "Shraddha",
@@ -458,13 +466,13 @@ export const translations = {
       shortAboutTitle: "A Clean Kannada-first Experience",
       shortAboutSubtitle: "Simple language, traditional warmth, and a clear layout",
       shortAboutBody:
-        "This website is designed to feel like a local Karnataka purohit service experience, while remaining easy to read and use on both mobile and desktop.",
+        "This website is designed to feel like a local Gokarna purohit service experience, while remaining easy to read and use on both mobile and desktop.",
       areasTitle: "Areas We Serve",
-      areasSubtitle: "Puja services available across major Karnataka cities.",
+      areasSubtitle: "Puja services available across Gokarna and nearby areas.",
     },
     servicesSection: {
       eyebrow: "Our Services",
-      title: "Traditional Karnataka Pujas And Rituals",
+      title: "Traditional Gokarna Pujas And Rituals",
       subtitle: "From home pujas to major family ceremonies, every service is handled with devotion and proper guidance.",
     },
     gallery: {
@@ -505,7 +513,7 @@ export const translations = {
       subtitle: "Experiences shared by families after using our puja services.",
     },
     aboutPage: {
-      title: "Visvanath Shankar Linga",
+      title: "Visvanath ShankarLinga",
       subtitle: "Pradhana Archakaru, Ganapati Temple and Mahabaleswara Temple",
       intro:
         "Visvanath Shankar Linga is closely connected to the spiritual traditions of Gokarna and performs rituals with devotion, calm guidance, and scriptural care. His service approach combines temple experience with a respectful family-friendly style.",
@@ -524,7 +532,7 @@ export const translations = {
         "The focus is to give families a peaceful and respectful ritual experience rooted in the sacred atmosphere of Gokarna. Calm communication, punctuality, and genuine devotion remain central to every service.",
       bookingTitle: "Book A Puja Or Ask For Guidance",
       bookingSubtitle: "A booking form is available at the bottom of this page.",
-      imageAlt: "Karnataka purohit services image",
+      imageAlt: "Gokarna purohit services image",
     },
     contactPage: {
       title: "Contact Us For Puja Bookings",
@@ -556,7 +564,7 @@ export const translations = {
       contactHeading: "Contact",
       areasHeading: "Service Areas",
       socialHeading: "Social",
-      copyright: "Copyright 2026 Karnataka Purohit Services.",
+      copyright: "Copyright 2026 Gokarna Purohit Services.",
     },
     contactDetails: {
       name: "Visvanath Shankar Linga",

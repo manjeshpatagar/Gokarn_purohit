@@ -5,7 +5,6 @@ import { BookingForm } from "@/components/BookingForm";
 import { Container } from "@/components/Container";
 import { useLanguage } from "@/components/LanguageProvider";
 import { SectionTitle } from "@/components/SectionTitle";
-import { imageLibrary } from "@/lib/data";
 
 export function AboutPageClient() {
   const { t } = useLanguage();
@@ -18,8 +17,8 @@ export function AboutPageClient() {
           <div className="relative grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
             <div className="overflow-hidden rounded-[2rem] border border-amber-100/80 bg-white/60 p-3 shadow-[0_24px_70px_rgba(120,53,15,0.12)] backdrop-blur-sm">
               <img
-                src={imageLibrary.aboutArticle}
-                alt="Experienced Kannada purohit in Uttara Kannada"
+                src="/images/about-purohit.jpeg"
+                alt="Purohit portrait in traditional attire"
                 className="aspect-[4/5] h-full w-full rounded-[1.5rem] object-cover"
               />
             </div>

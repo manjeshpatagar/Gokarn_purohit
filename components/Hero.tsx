@@ -7,7 +7,12 @@ import { Button } from "./Button";
 import { Container } from "./Container";
 import { useLanguage } from "./LanguageProvider";
 
-const heroImages = ["/images/hero-ganapati.png", "/images/hero-deity.png"];
+const heroImages = [
+  "/images/hero-gokarna-ganapati.jpeg",
+  "/images/hero-ganapati.png",
+  "/images/hero-deity.png",
+  "/images/hero-mahabaleswara.png",
+];
 
 export function Hero() {
   const { t } = useLanguage();
@@ -44,7 +49,16 @@ export function Hero() {
               priority={index === 0}
               quality={100}
               sizes="100vw"
-              className="object-cover object-center"
+              className="object-cover object-center opacity-35 blur-sm scale-105"
+            />
+            <Image
+              src={image}
+              alt=""
+              fill
+              priority={index === 0}
+              quality={100}
+              sizes="100vw"
+              className="object-contain object-center"
             />
           </div>
         ))}
@@ -73,6 +87,11 @@ export function Hero() {
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-8 text-orange-50 md:text-lg">
             {t.hero.subtitle}
+          </p>
+          <p className="mt-4">
+            <span className="inline-flex rounded-full border border-amber-300/40 bg-amber-200/12 px-5 py-2 text-sm font-semibold tracking-[0.12em] text-amber-50 shadow-[0_10px_30px_rgba(0,0,0,0.22)] backdrop-blur-sm md:text-base">
+              {t.hero.designation}
+            </span>
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Button href={`tel:${t.contactDetails.phone}`}>{t.hero.callBtn}</Button>

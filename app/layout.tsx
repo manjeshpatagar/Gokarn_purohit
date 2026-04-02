@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     "Gokarna Pandit",
     "Purohit in Bhatkal",
     "Purohit in Sirsi",
-    "Griha Pravesh Pooja Karnataka",
+    "Griha Pravesh Pooja Gokarna",
     "Satyanarayana Pooja Uttara Kannada",
-    "Hindu priest Karnataka",
+    "Hindu priest Gokarna",
   ],
   alternates: {
     canonical: "/",
