@@ -12,7 +12,7 @@ type LanguageContextValue = {
 const LanguageContext = createContext<LanguageContextValue | undefined>(undefined);
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [lang, setLang] = useState<Locale>("kn");
+  const [lang, setLang] = useState<Locale>("en");
 
   useEffect(() => {
     document.documentElement.lang = lang;

@@ -14,8 +14,8 @@ const packageContent = {
     bookingTitle: "Share Your Package Requirement",
     bookingSubtitle: "Send your preferred pooja package, date, and contact details for booking support.",
     pricingTitle: "Price Range",
-    pricingSubtitle: "Packages usually begin from Rs. 3,000, common ranges fall around Rs. 15,000, and major rituals can go up to Rs. 45,000.",
-    pricingPoints: ["Starts at Rs. 3,000", "Common range around Rs. 15,000", "Major rituals up to Rs. 45,000"],
+    pricingSubtitle: "Packages usually begin from Rs. 8,000, common ranges fall around Rs. 15,000, and major rituals can go up to Rs. 45,000.",
+    pricingPoints: ["Starts at Rs. 8,000", "Common range around Rs. 15,000", "Major rituals up to Rs. 45,000"],
     items: [
       {
         title: "Simple Pinda Pradana (Shradda)",
@@ -62,8 +62,8 @@ const packageContent = {
     bookingTitle: "ನಿಮ್ಮ ಪ್ಯಾಕೇಜ್ ಅಗತ್ಯವನ್ನು ಹಂಚಿಕೊಳ್ಳಿ",
     bookingSubtitle: "ನಿಮಗೆ ಬೇಕಾದ ಪೂಜೆ ಪ್ಯಾಕೇಜ್, ದಿನಾಂಕ ಮತ್ತು ಸಂಪರ್ಕ ವಿವರಗಳನ್ನು ಕಳುಹಿಸಿ.",
     pricingTitle: "ವೆಚ್ಚದ ಶ್ರೇಣಿ",
-    pricingSubtitle: "ಪ್ಯಾಕೇಜ್‌ಗಳು ಸಾಮಾನ್ಯವಾಗಿ ರೂ. 3,000 ರಿಂದ ಆರಂಭವಾಗುತ್ತವೆ, ಹಲವಾರು ಪೂಜೆಗಳು ರೂ. 15,000 ಸುತ್ತಮುತ್ತ ಇರುತ್ತವೆ, ಮತ್ತು ಮುಖ್ಯ ವಿಧಿಗಳು ರೂ. 45,000 ವರೆಗೆ ಹೋಗಬಹುದು.",
-    pricingPoints: ["ಆರಂಭಿಕ ವೆಚ್ಚ ರೂ. 3,000", "ಸಾಮಾನ್ಯ ಶ್ರೇಣಿ ರೂ. 15,000", "ಮುಖ್ಯ ವಿಧಿಗಳು ರೂ. 45,000 ವರೆಗೆ"],
+    pricingSubtitle: "ಪ್ಯಾಕೇಜ್‌ಗಳು ಸಾಮಾನ್ಯವಾಗಿ ರೂ. 8,000 ರಿಂದ ಆರಂಭವಾಗುತ್ತವೆ, ಹಲವಾರು ಪೂಜೆಗಳು ರೂ. 15,000 ಸುತ್ತಮುತ್ತ ಇರುತ್ತವೆ, ಮತ್ತು ಮುಖ್ಯ ವಿಧಿಗಳು ರೂ. 45,000 ವರೆಗೆ ಹೋಗಬಹುದು.",
+    pricingPoints: ["ಆರಂಭಿಕ ವೆಚ್ಚ ರೂ. 8,000", "ಸಾಮಾನ್ಯ ಶ್ರೇಣಿ ರೂ. 15,000", "ಮುಖ್ಯ ವಿಧಿಗಳು ರೂ. 45,000 ವರೆಗೆ"],
     items: [
       {
         title: "ಸರಳ ಪಿಂಡ ಪ್ರದಾನ (ಶ್ರಾದ್ಧ)",
