@@ -36,14 +36,14 @@ const popularPoojaContent = {
         title: "Moksha Narayana Nagabali Pooja",
         description:
           "A deeply significant ritual performed with devotion for ancestral blessings, peace to departed souls, and spiritual relief from unresolved family karmas.",
-        image: "/images/popular-ashlesha-bali.jpeg",
+        image: "/images/gallery-tripindi-narayana-bali.jpeg",
         imagePosition: "center 28%",
       },
       {
         title: "Tripindi Shradda",
         description:
           "A traditional shradda ritual performed with scriptural care for ancestral peace, unresolved family doshas, and spiritual relief.",
-        image: "/images/pooja-shraddha.jpeg",
+        image: "/images/gallery-tripindi-narayana-bali.jpeg",
         imagePosition: "center",
       },
       {
@@ -57,7 +57,7 @@ const popularPoojaContent = {
         title: "Navagraha Pooja",
         description:
           "A powerful pooja offered to the nine planets to invite harmony, remove obstacles, and strengthen positive life energy.",
-        image: "/images/popular-navagraha-puja.png",
+        image: "/images/gallery-ganapati-pooja.jpeg",
         imagePosition: "center 35%",
       },
     ],
@@ -81,14 +81,14 @@ const popularPoojaContent = {
         title: "ಮೋಕ್ಷ ನಾರಾಯಣ ನಾಗಬಲಿ ಪೂಜೆ",
         description:
           "ಪಿತೃಗಳ ಅನುಗ್ರಹ, ಅಗಲಿದ ಆತ್ಮಗಳ ಶಾಂತಿ ಮತ್ತು ಕುಟುಂಬದ ಅನಿರ್ವಚಿತ ಕರ್ಮಗಳಿಂದ ಆತ್ಮಿಕ ಪರಿಹಾರಕ್ಕಾಗಿ ಭಕ್ತಿಯಿಂದ ನೆರವೇರಿಸುವ ಮಹತ್ವದ ಪೂಜೆ.",
-        image: "/images/popular-ashlesha-bali.jpeg",
+        image: "/images/gallery-tripindi-narayana-bali.jpeg",
         imagePosition: "center 28%",
       },
       {
         title: "ತ್ರಿಪಿಂಡಿ ಶ್ರಾದ್ಧ",
         description:
           "ಪಿತೃಶಾಂತಿ, ಕುಟುಂಬದ ದೋಷ ನಿವಾರಣೆ ಮತ್ತು ಆತ್ಮಿಕ ನೆಮ್ಮದಿಗಾಗಿ ಶಾಸ್ತ್ರೋಕ್ತವಾಗಿ ನೆರವೇರಿಸುವ ಶ್ರಾದ್ಧ ವಿಧಿ.",
-        image: "/images/pooja-shraddha.jpeg",
+        image: "/images/gallery-tripindi-narayana-bali.jpeg",
         imagePosition: "center",
       },
       {
@@ -102,7 +102,7 @@ const popularPoojaContent = {
         title: "ನವಗ್ರಹ ಪೂಜೆ",
         description:
           "ಒಂಬತ್ತು ಗ್ರಹಗಳ ಅನುಗ್ರಹಕ್ಕಾಗಿ, ಅಡಚಣೆಗಳನ್ನು ದೂರಿಸಲು ಮತ್ತು ಸಕಾರಾತ್ಮಕ ಜೀವನಶಕ್ತಿಯನ್ನು ಹೆಚ್ಚಿಸಲು ನೆರವೇರಿಸುವ ಶಕ್ತಿಯುತ ಪೂಜೆ.",
-        image: "/images/popular-navagraha-puja.png",
+        image: "/images/gallery-ganapati-pooja.jpeg",
         imagePosition: "center 35%",
       },
     ],

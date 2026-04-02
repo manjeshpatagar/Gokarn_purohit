@@ -37,7 +37,7 @@ const galleryContent = {
         imagePosition: "center",
       },
       {
-        image: "/images/gallery-navagraha-pooja.jpeg",
+        image: "/images/gallery-ganapati-pooja.jpeg",
         title: "Navagraha Pooja",
         subtitle: "Planetary pooja setup arranged with care for harmony, balance, and positive energy.",
         imagePosition: "center",
@@ -108,7 +108,7 @@ const galleryContent = {
         imagePosition: "center",
       },
       {
-        image: "/images/gallery-navagraha-pooja.jpeg",
+        image: "/images/gallery-ganapati-pooja.jpeg",
         title: "ನವಗ್ರಹ ಪೂಜೆ",
         subtitle: "ಸೌಹಾರ್ದ, ಸಮತೋಲನ ಮತ್ತು ಶುಭಶಕ್ತಿಗಾಗಿ ಕಾಳಜಿಯಿಂದ ಸಿದ್ಧಪಡಿಸಲಾದ ನವಗ್ರಹ ಪೂಜಾ ವ್ಯವಸ್ಥೆ.",
         imagePosition: "center",
