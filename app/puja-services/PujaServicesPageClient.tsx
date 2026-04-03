@@ -16,7 +16,7 @@ const serviceCardImages = [
   "/images/gallery-prayaschitta-tila-homa.jpeg",
   "/images/gallery-tripindi-narayana-bali.jpeg",
   "/images/gallery-ganapati-pooja.jpeg",
-  "/images/pooja-griha-pravesha.jpeg",
+  "/images/griha-pravesha-custom.jpg",
   "/images/gallery-purohit-1.jpeg",
   "/images/pooja-vivaha.png",
   "/images/gallery-purohit-2.jpeg",

@@ -523,10 +523,10 @@ export const translations = {
       subtitle: "Experiences shared by families after using our puja services.",
     },
     aboutPage: {
-      title: "Visvanath ShankarLinga",
+      title: "Vishwanath ShankarLinga",
       subtitle: "Pradhana Archakaru, Ganapati Temple and Mahabaleswara Temple",
       intro:
-        "Visvanath Shankar Linga is closely connected to the spiritual traditions of Gokarna and performs rituals with devotion, calm guidance, and scriptural care. His service approach combines temple experience with a respectful family-friendly style.",
+        "Vishwanath ShankarLinga is closely connected to the spiritual traditions of Gokarna and performs rituals with devotion, calm guidance, and scriptural care. His service approach combines temple experience with a respectful family-friendly style.",
       section1Title: "Tradition And Trust",
       section1Body:
         "Every ritual is performed with care for spiritual meaning, proper sequence, and family participation. Clear guidance is offered so families feel comfortable throughout the ceremony.",
@@ -570,14 +570,14 @@ export const translations = {
       topAria: "Scroll to top",
     },
     footer: {
-      description: "Traditional pujas, family rituals, and spiritual guidance in Gokarna by Visvanath Shankar Linga.",
+      description: "Traditional pujas, family rituals, and spiritual guidance in Gokarna by Vishwanath ShankarLinga.",
       contactHeading: "Contact",
       areasHeading: "Service Areas",
       socialHeading: "Social",
       copyright: "Copyright 2026 Gokarna Purohit Services.",
     },
     contactDetails: {
-      name: "Visvanath Shankar Linga",
+      name: "Vishwanath ShankarLinga",
       email: "vshbhat@gmail.com",
       phone: "+91 98860 17521",
       address: "Gokarna, Karnataka, India",
