@@ -22,8 +22,8 @@ const serviceCardImages = [
   "/images/gallery-purohit-2.jpeg",
   "/images/gallery-purohit-3.jpeg",
   "/images/pooja-shraddha.jpeg",
-  "/images/gallery-vastu-pooja.jpeg",
-  "/images/hero-gokarna-ganapati.jpeg",
+  "/images/vastu-puja-custom.jpeg",
+  "/images/ganesha-puja-custom.jpeg",
   "/images/popular-lakshmi-pooja.jpeg",
 ];
 

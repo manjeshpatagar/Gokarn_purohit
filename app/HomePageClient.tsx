@@ -125,6 +125,7 @@ export function HomePageClient() {
       <FeatureCards />
 
       <AboutSection
+        pretitle={t.home.aboutPretitle}
         title={t.home.aboutTitle}
         subtitle={t.home.aboutSubtitle}
         body={t.home.aboutBody}

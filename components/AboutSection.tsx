@@ -6,6 +6,7 @@ import { SectionTitle } from "./SectionTitle";
 import { useLanguage } from "./LanguageProvider";
 
 type AboutSectionProps = {
+  pretitle?: string;
   title: string;
   subtitle: string;
   body: string;
@@ -17,6 +18,7 @@ type AboutSectionProps = {
 };
 
 export function AboutSection({
+  pretitle,
   title,
   subtitle,
   body,
@@ -44,6 +46,11 @@ export function AboutSection({
             />
           </div>
           <div className="min-w-0">
+            {pretitle ? (
+              <p className="mb-3 text-sm font-semibold uppercase tracking-[0.24em] text-orange-700 sm:text-base">
+                {pretitle}
+              </p>
+            ) : null}
             <SectionTitle eyebrow={t.common.about} title={title} subtitle={subtitle} />
             <p className="mt-6 text-base leading-8 text-stone-600">{body}</p>
             {buttonLabel && buttonHref ? (

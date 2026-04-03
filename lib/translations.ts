@@ -172,6 +172,7 @@ export const translations = {
     ],
     areas: ["ಕಾರವಾರ", "ಕುಮಟಾ", "ಹೊನ್ನಾವರ", "ಭಟ್ಕಳ", "ಸಿರ್ಸಿ", "ಅಂಕೋಲಾ", "ಯಲ್ಲಾಪುರ", "ದಾಂಡೇಲಿ", "ಗೋಕರ್ಣ"],
     home: {
+      aboutPretitle: "ಗೋಕರ್ಣ ಆತ್ಮಲಿಂಗ",
       aboutTitle: "ಗೋಕರ್ಣದ ಸಂಪ್ರದಾಯಬದ್ಧ ಪೂಜಾರಿ ಸೇವೆಗಳು",
       aboutSubtitle: "ಸ್ಥಳೀಯ ಕುಟುಂಬಗಳಿಗೆ ಭಕ್ತಿ, ಶಾಂತಿ ಮತ್ತು ವಿಶ್ವಾಸದ ಪೂಜೆ ಮಾರ್ಗದರ್ಶನ",
       aboutBody:
@@ -463,6 +464,7 @@ export const translations = {
     ],
     areas: ["Karwar", "Kumta", "Honnavar", "Bhatkal", "Sirsi", "Ankola", "Yellapur", "Dandeli", "Gokarna"],
     home: {
+      aboutPretitle: "Gokarna Atmalinga",
       aboutTitle: "Traditional Gokarna Priest Services",
       aboutSubtitle: "Devotional, peaceful, and reliable puja guidance for local families",
       aboutBody:
