@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { Button } from "./Button";
 import { Container } from "./Container";
 import { useLanguage } from "./LanguageProvider";
+import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 
 const heroImages = [
   "/images/hero-gokarna-ganapati.jpeg",
@@ -94,9 +95,11 @@ export function Hero() {
             </span>
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <Button href={`tel:${t.contactDetails.phone}`}>{t.hero.callBtn}</Button>
+            <Button href={`tel:${t.contactDetails.phone}`}>
+              <span className="flex items-center gap-2"><FaPhoneAlt size={19}/>{t.hero.callBtn}</span>
+            </Button>
             <Button href={`https://wa.me/${t.contactDetails.phone.replace(/[^\d]/g, "")}`} variant="secondary">
-              {t.hero.whatsappBtn}
+              <span className="flex items-center gap-2"><FaWhatsapp size={22}/>{t.hero.whatsappBtn}</span>
             </Button>
           </div>
         </div>
