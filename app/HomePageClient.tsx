@@ -137,14 +137,14 @@ export function HomePageClient() {
 
       <section className="relative overflow-hidden bg-[linear-gradient(180deg,#fffaf5_0%,#fff5eb_36%,#ffffff_100%)] py-16">
         <div className="absolute inset-x-0 top-0 h-56 bg-[radial-gradient(circle_at_top,rgba(251,191,36,0.18),transparent_58%)]" />
-        <Container>
+        <div className="mx-auto w-full max-w-[1600px] px-6">
           <SectionTitle
             eyebrow={popularPoojas.eyebrow}
             title={popularPoojas.title}
             subtitle={popularPoojas.subtitle}
             align="center"
           />
-          <div className="relative mt-12 grid gap-6 sm:grid-cols-2 xl:grid-cols-5">
+          <div className="relative mt-12 grid gap-5 sm:grid-cols-2 xl:grid-cols-5">
             {popularPoojas.items.map((pooja, index) => (
               <article
                 key={pooja.title}
@@ -184,7 +184,7 @@ export function HomePageClient() {
               </article>
             ))}
           </div>
-        </Container>
+        </div>
         <style jsx>{`
           @keyframes popularPoojaFloat {
             0%,
