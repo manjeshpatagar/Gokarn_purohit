@@ -71,14 +71,14 @@ export function VideoShowcase() {
           subtitle={content.subtitle}
           align="center"
         />
-        <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+        <div className="mt-12 grid gap-8 sm:grid-cols-2 xl:grid-cols-3">
           {content.items.map((item, index) => (
             <article
               key={`${item.title}-${index}`}
               className="group overflow-hidden rounded-[2rem] border border-amber-100/80 bg-white shadow-[0_22px_55px_rgba(120,53,15,0.12)] transition duration-500 hover:-translate-y-2 hover:shadow-[0_30px_75px_rgba(120,53,15,0.18)]"
               style={{ animation: `videoFloat 5.4s ease-in-out ${index * 0.15}s infinite` }}
             >
-              <div className="relative aspect-video overflow-hidden bg-stone-950">
+              <div className="relative h-[220px] sm:h-[260px] lg:h-[300px] overflow-hidden bg-stone-950">
                 {"video" in item ? (
                   <video
                     src={item.video}
@@ -107,8 +107,8 @@ export function VideoShowcase() {
                   </span>
                 </div>
               </div>
-              <div className="bg-gradient-to-b from-white to-orange-50/60 p-5">
-                <h3 className="text-xl font-bold text-stone-900">{item.title}</h3>
+              <div className="bg-gradient-to-b from-white to-orange-50/60 p-6">
+               <h3 className="text-xl font-bold leading-tight text-stone-900"> {item.title}</h3>
               </div>
             </article>
           ))}
