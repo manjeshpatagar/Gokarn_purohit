@@ -14,20 +14,22 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-orange-100 bg-white/95 backdrop-blur">
-      <Container className="flex items-center justify-between gap-4 py-3 sm:py-4">
+      <Container className="grid grid-cols-[auto_1fr_auto] items-center gap-2 py-1 sm:py-2">
         <Link href="/" className="flex min-w-0 items-center gap-3">
           <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-orange-100 text-base font-bold text-orange-700 sm:h-12 sm:w-12 sm:text-lg">
             Om
           </div>
           <div className="min-w-0">
-            <p className="truncate text-base font-bold text-stone-900 sm:text-lg">{t.brand.title}</p>
-            <p className="truncate text-[10px] uppercase tracking-[0.2em] text-stone-500 sm:text-xs sm:tracking-[0.24em]">
+            <p className="whitespace-nowrap text-base font-bold text-stone-900 sm:text-lg">
+              {t.brand.title}
+            </p>
+            <p className="whitespace-nowrap text-[10px] uppercase tracking-[0.2em] text-stone-500 sm:text-xs sm:tracking-[0.24em]">
               {t.brand.subtitle}
             </p>
           </div>
         </Link>
 
-        <nav className="hidden items-center gap-2 lg:flex">
+        <nav className="hidden items-center justify-center gap-2 lg:flex">
           {t.navLinks.map((link) => {
             const isActive = pathname === link.href;
 
@@ -35,7 +37,7 @@ export function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`rounded-full px-4 py-2 text-sm font-medium transition ${
+                className={`whitespace-nowrap rounded-full px-2 py-2 text-sm font-medium transition ${
                   isActive
                     ? "bg-orange-100 text-orange-700"
                     : "text-stone-700 hover:bg-orange-50 hover:text-orange-700"
@@ -47,7 +49,7 @@ export function Navbar() {
           })}
         </nav>
 
-        <div className="hidden items-center gap-3 lg:flex">
+        <div className="hidden items-center gap-2 lg:flex">
           <div className="flex rounded-full border border-orange-200 bg-orange-50 p-1">
             <button
               type="button"
