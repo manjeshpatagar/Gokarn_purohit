@@ -96,10 +96,10 @@ export function Hero() {
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Button href={`tel:${t.contactDetails.phone}`}>
-              <span className="flex items-center gap-2"><FaPhoneAlt size={19}/>{t.hero.callBtn}</span>
+              <span className="flex items-center gap-1.5"><FaPhoneAlt size={18}/>{t.hero.callBtn}</span>
             </Button>
             <Button href={`https://wa.me/${t.contactDetails.phone.replace(/[^\d]/g, "")}`} variant="secondary">
-              <span className="flex items-center gap-2"><FaWhatsapp size={22}/>{t.hero.whatsappBtn}</span>
+              <span className="flex items-center gap-1"><FaWhatsapp size={22} color="green"/>{t.hero.whatsappBtn}</span>
             </Button>
           </div>
         </div>
