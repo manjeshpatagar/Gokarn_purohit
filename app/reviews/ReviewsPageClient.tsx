@@ -94,7 +94,7 @@ export function ReviewsPageClient() {
             />
             <div className="mt-10 grid gap-6 lg:grid-cols-[1.35fr_0.95fr]">
               <article className="group overflow-hidden rounded-[2rem] border border-stone-200/80 bg-white shadow-[0_24px_80px_rgba(28,25,23,0.12)]">
-                <div className="relative aspect-[16/11] overflow-hidden">
+                <div className="relative aspect-[4/3] sm:aspect-[16/11] overflow-hidden">
                   <Image
                     src={roomImages[0]}
                     alt={roomContent.title}
@@ -107,9 +107,9 @@ export function ReviewsPageClient() {
                   <div className="absolute left-5 top-5 inline-flex rounded-full border border-white/20 bg-black/25 px-4 py-2 text-[0.7rem] font-semibold uppercase tracking-[0.26em] text-white backdrop-blur-md">
                     {roomContent.badge}
                   </div>
-                  <div className="absolute inset-x-0 bottom-0 p-6 text-white sm:p-7">
-                    <h3 className="text-2xl font-bold">{roomContent.featureTitle}</h3>
-                    <p className="mt-3 max-w-2xl text-sm leading-7 text-orange-50/90">
+                  <div className="absolute inset-x-0 bottom-0 p-4 text-white sm:p-7">
+                    <h3 className="text-xl font-bold sm:text-2xl">{roomContent.featureTitle}</h3>
+                    <p className="mt-2 max-w-2xl text-xs leading-6 text-orange-50/90 m:mt-3 sm:text-sm sm:leading-7">
                       {roomContent.featureBody}
                     </p>
                   </div>
@@ -119,9 +119,9 @@ export function ReviewsPageClient() {
                 {roomImages.slice(1).map((image, index) => (
                   <article
                     key={image}
-                    className="group overflow-hidden rounded-[1.6rem] border border-amber-100 bg-white/90 shadow-[0_20px_55px_rgba(120,53,15,0.1)] backdrop-blur-sm"
+                    className="group h-full overflow-hidden rounded-[1.6rem] border border-amber-100 bg-white/90 shadow-[0_20px_55px_rgba(120,53,15,0.1)] backdrop-blur-sm"
                   >
-                    <div className="relative aspect-[4/3] overflow-hidden">
+                    <div className="relative h-full min-h-[180px] overflow-hidden">
                       <Image
                         src={image}
                         alt={`${roomContent.title} ${index + 2}`}
