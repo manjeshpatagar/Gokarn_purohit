@@ -38,7 +38,7 @@ export function ServicesSection() {
                 </li>
               ))}
             </ul>
-            <Button href="/puja-services" className="mt-8">
+            <Button href="/puja-services" className="mt-8 w-full sm:w-auto">
               {t.common.allServices}
             </Button>
           </div>
