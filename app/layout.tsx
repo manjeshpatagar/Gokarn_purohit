@@ -44,7 +44,7 @@ export default function RootLayout({
       <body>
         <LanguageProvider>
           <Navbar />
-          <main className="overflow-x-hidden pb-24 md:pb-0">{children}</main>
+          <main className="overflow-x-hidden pb-0 md:pb-0">{children}</main>
           <Footer />
           <FloatingActions />
         </LanguageProvider>
