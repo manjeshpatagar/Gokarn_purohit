@@ -13,23 +13,23 @@ export function Navbar() {
   const { lang, setLang, t } = useLanguage();
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-2 border-black">
-  <Container className="grid grid-cols-[auto_1fr_auto] items-center gap-2 py-1 sm:py-2 border-2 border-black">
-        <Link href="/" className="flex min-w-0 items-center gap-3">
+    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur">
+  <Container className="flex items-center justify-between gap-3 py-2 sm:gap-4">
+        <Link href="/" className="flex min-w-0 flex-1 items-center gap-3">
           <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-orange-100 text[10px] font-bold text-orange-700 sm:h-12 sm:w-12 sm:text-lg">
             Om
           </div>
           <div className="min-w-0">
-            <p className="whitespace-nowrap text-base font-bold text-stone-900 sm:text-lg">
+            <p className="text-sm font-bold leading-tight text-stone-900 sm:text-lg">
               {t.brand.title}
             </p>
-            <p className="whitespace-nowrap text-[10px] uppercase tracking-[0.2em] text-stone-500 sm:text-xs sm:tracking-[0.24em]">
+           <p className="text-[8px] uppercase tracking-[0.12em] text-stone-500 sm:text-xs sm:tracking-[0.2em]">
               {t.brand.subtitle}
             </p>
           </div>
         </Link>
 
-        <nav className="hidden items-center justify-center gap-2 lg:flex">
+        <nav className="hidden items-center justify-center gap-1 xl:flex">
           {t.navLinks.map((link) => {
             const isActive = pathname === link.href;
 
@@ -49,7 +49,7 @@ export function Navbar() {
           })}
         </nav>
 
-        <div className="hidden items-center gap-2 lg:flex">
+        <div className="hidden items-center gap-2 xl:flex">
           <div className="flex rounded-full border border-orange-200 bg-orange-50 p-1">
             <button
               type="button"
@@ -73,7 +73,7 @@ export function Navbar() {
         <button
           type="button"
           onClick={() => setIsOpen((value) => !value)}
-          className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-orange-200 text-stone-700 lg:hidden"
+          className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-orange-200 text-stone-700 xl:hidden"
           aria-label={lang === "kn" ? "ಮೆನು ತೆರೆಯಿರಿ" : "Toggle menu"}
         >
           <span className="space-y-1.5">
@@ -85,7 +85,7 @@ export function Navbar() {
       </Container>
 
       {isOpen ? (
-        <div className="border-t border-orange-100 bg-white lg:hidden">
+        <div className="border-t border-orange-100 bg-white xl:hidden">
           <Container className="flex max-h-[70vh] flex-col overflow-y-auto py-4">
             <div className="mb-4 flex rounded-full border border-orange-200 bg-orange-50 p-1">
               <button
