@@ -13,8 +13,8 @@ export function Navbar() {
   const { lang, setLang, t } = useLanguage();
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-2 border-black">
-  <Container className="grid grid-cols-[auto_1fr_auto] items-center gap-2 py-1 sm:py-2 border-2 border-black">
+    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur">
+  <Container className="grid grid-cols-[auto_1fr_auto] items-center gap-2 py-1 sm:py-2">
         <Link href="/" className="flex min-w-0 items-center gap-3">
           <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-orange-100 text[10px] font-bold text-orange-700 sm:h-12 sm:w-12 sm:text-lg">
             Om
