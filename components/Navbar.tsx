@@ -14,7 +14,7 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur">
-  <Container className="flex items-center justify-between gap-3 py-2 sm:gap-4">
+  <Container className="grid grid-cols-[auto_1fr_auto] items-center gap-2 py-1 sm:py-2">
         <Link href="/" className="flex min-w-0 flex-1 items-center gap-3">
           <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-orange-100 text[10px] font-bold text-orange-700 sm:h-12 sm:w-12 sm:text-lg">
             Om
@@ -73,7 +73,7 @@ export function Navbar() {
         <button
           type="button"
           onClick={() => setIsOpen((value) => !value)}
-          className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-orange-200 text-stone-700 xl:hidden"
+          className="ml-auto inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-orange-200 text-stone-700 xl:hidden"
           aria-label={lang === "kn" ? "ಮೆನು ತೆರೆಯಿರಿ" : "Toggle menu"}
         >
           <span className="space-y-1.5">
