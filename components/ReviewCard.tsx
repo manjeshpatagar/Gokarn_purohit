@@ -15,9 +15,9 @@ export function ReviewCard({ name, rating, text, location, service }: ReviewCard
     .toUpperCase();
 
   return (
-    <article className="group rounded-[2rem] border border-amber-100/80 bg-white p-6 shadow-[0_18px_50px_rgba(120,53,15,0.1)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_24px_65px_rgba(120,53,15,0.16)]">
-      <div className="flex items-start justify-between gap-4">
-        <div className="flex items-center gap-4">
+    <article className="group w-full rounded-[2rem] border border-amber-100/80 bg-white p-6 shadow-[0_18px_50px_rgba(120,53,15,0.1)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_24px_65px_rgba(120,53,15,0.16)]">
+      <div className="flex min-w-0 items-start justify-between gap-4 max-sm:gap-2">
+        <div className="flex min-w-0 items-center gap-4 max-sm:gap-2">
           <div className="flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-orange-500 via-amber-400 to-yellow-300 text-base font-bold text-white shadow-[0_10px_24px_rgba(120,53,15,0.28)]">
             {initials}
           </div>
@@ -26,7 +26,7 @@ export function ReviewCard({ name, rating, text, location, service }: ReviewCard
             {location ? <p className="mt-1 text-xs font-medium uppercase tracking-[0.18em] text-orange-600">{location}</p> : null}
           </div>
         </div>
-        <div className="rounded-full bg-orange-50 px-3 py-2 text-orange-500 shadow-inner">
+        <div className="shrink-0 rounded-full bg-orange-50 px-3 py-2 text-orange-500 shadow-inner max-sm:px-2 max-sm:py-1">
           {Array.from({ length: rating }, () => "★").join("")}
         </div>
       </div>
