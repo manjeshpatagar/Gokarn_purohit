@@ -37,7 +37,7 @@ export const translations = {
       title: "ಕೈವಲ್ಯ ಮುಕ್ತಿ ಕ್ಷೇತ್ರ ಗೋಕರ್ಣ",
       subtitle: "ಸಂಪ್ರದಾಯಬದ್ಧವಾಗಿ ಮತ್ತು ಶ್ರದ್ಧೆಯಿಂದ ಪೂಜೆಗಳನ್ನು ನೆರವೇರಿಸಲಾಗುತ್ತದೆ",
       designation: "Pradhana Archakaru Gokarna",
-      callBtn: "📞 ಕರೆ ಮಾಡಿ",
+      callBtn: " ಕರೆ ಮಾಡಿ",
       whatsappBtn: "💬 ವಾಟ್ಸಾಪ್ ಮಾಡಿ",
     },
     featureCards: [
@@ -329,8 +329,8 @@ export const translations = {
       title: "kaivalya mukti kshetra gokarna",
       subtitle: "Performing traditional rituals with devotion and purity",
       designation: "Pradhana Archakaru Gokarna",
-      callBtn: "📞 Call Now",
-      whatsappBtn: "💬 WhatsApp",
+      callBtn: "Call Now",
+      whatsappBtn: "WhatsApp",
     },
     featureCards: [
       { icon: "Om", title: "Experienced Priests", description: "Traditional Gokarna rituals performed with devotion and clarity." },

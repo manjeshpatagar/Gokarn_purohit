@@ -23,9 +23,6 @@ export function Navbar() {
             <p className="whitespace-nowrap text-base font-bold text-stone-900 sm:text-lg">
               {t.brand.title}
             </p>
-            <p className="whitespace-nowrap text-[10px] uppercase tracking-[0.2em] text-stone-500 sm:text-xs sm:tracking-[0.24em]">
-              {t.brand.subtitle}
-            </p>
           </div>
         </Link>
 
