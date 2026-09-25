@@ -13,17 +13,15 @@ export function Navbar() {
   const { lang, setLang, t } = useLanguage();
 
   return (
-    <header className="sticky top-0 z-50 border-b border-orange-100 bg-white/95 backdrop-blur">
-      <Container className="grid grid-cols-[auto_1fr_auto] items-center gap-4 py-3 sm:py-4">
-        <Link href="/" className="flex min-w-0 items-center gap-4">
-          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-orange-100 text-base font-bold text-orange-700 sm:h-12 sm:w-12 sm:text-lg">
+    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur">
+  <Container className="grid grid-cols-[auto_1fr_auto] items-center gap-2 py-1 sm:py-2">
+        <Link href="/" className="flex min-w-0 items-center gap-3">
+          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-orange-100 text[10px] font-bold text-orange-700 sm:h-12 sm:w-12 sm:text-lg">
             Om
           </div>
           <div className="min-w-0">
-            <p className="whitespace-nowrap text-base font-bold text-stone-900 sm:text-lg">{t.brand.title}
-            </p>
-            <p className="whitespace-nowrap text-[10px] uppercase tracking-[0.2em] text-stone-500 sm:text-xs sm:tracking-[0.24em]">
-              {t.brand.subtitle}
+            <p className="whitespace-nowrap text-base font-bold text-stone-900 sm:text-lg">
+              {t.brand.title}
             </p>
           </div>
         </Link>
@@ -53,19 +51,20 @@ export function Navbar() {
             <button
               type="button"
               onClick={() => setLang("kn")}
-              className={`rounded-full px-3 py-2 text-xs font-semibold transition ${lang === "kn" ? "bg-orange-600 text-white" : "text-orange-700"}`}
+              className={`rounded-full px-2 py-1 text-[10px] font-semibold transition ${lang === "kn" ? "bg-orange-600 text-white" : "text-orange-700"}`}
             >
               ಕನ್ನಡ
             </button>
             <button
               type="button"
               onClick={() => setLang("en")}
-              className={`rounded-full px-3 py-2 text-xs font-semibold transition ${lang === "en" ? "bg-orange-600 text-white" : "text-orange-700"}`}
+              className={`rounded-full px-2 py-1 text-[10px] font-semibold transition ${lang === "en" ? "bg-orange-600 text-white" : "text-orange-700"}`}
             >
               EN
             </button>
           </div>
-          <Button href="/contact">{t.common.connect}</Button>
+          <Button href="/contact" className="px-3 py-2 text-xs">
+          {t.common.connect}</Button>
         </div>
 
         <button
@@ -119,7 +118,7 @@ export function Navbar() {
                 </Link>
               );
             })}
-            <Button href="/contact" className="mt-4 w-full" variant="primary">
+            <Button href="/contact" className="mt-4 w-full py-2 text-xs" variant="primary">
               {t.common.connect}
             </Button>
           </Container>
