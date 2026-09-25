@@ -81,7 +81,7 @@ export function PujaServicesPageClient() {
           </div>
         </Container>
       </section>
-      <section className="bg-white py-16">
+      <section className="bg-white pt-16 md:py-16">
         <Container className="max-w-4xl">
           <SectionTitle
             eyebrow={t.common.booking}
