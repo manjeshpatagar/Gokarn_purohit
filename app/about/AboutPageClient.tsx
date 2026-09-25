@@ -67,7 +67,7 @@ export function AboutPageClient() {
                   </div>
                 </div>
               </div>
-              <div className="mt-8 flex flex-wrap gap-4">
+              <div className="mt-8 flex flex-wrap justify-center gap-4">
                 <Button href={`tel:${t.contactDetails.phone}`}>📞 Call Now</Button>
                 <Button href="/contact" variant="secondary">
                   Contact Details
