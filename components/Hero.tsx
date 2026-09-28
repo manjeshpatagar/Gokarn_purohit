@@ -65,7 +65,7 @@ export function Hero() {
       </div>
       <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(17,24,39,0.68),rgba(120,53,15,0.42))]" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(251,191,36,0.16),transparent_32%)]" />
-      <Container className="relative py-24 md:min-h-[720px] md:py-32 lg:flex lg:items-center">
+     <Container className="relative px-7 py-24 sm:px-8 md:min-h-[720px] md:py-32 lg:flex lg:items-center">
         <div className="max-w-3xl">
           <p className="mb-6 inline-flex rounded-full border border-amber-200/30 bg-black/25 px-4 py-2 text-[0.72rem] font-semibold uppercase tracking-[0.3em] text-orange-100 backdrop-blur-sm">
             {t.brand.subtitle}

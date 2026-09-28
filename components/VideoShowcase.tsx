@@ -101,11 +101,13 @@ export function VideoShowcase() {
                     </div>
                   </>
                 )}
-                <div className="absolute left-4 top-4">
-                  <span className="inline-flex rounded-full border border-white/20 bg-black/25 px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.24em] text-white backdrop-blur-md">
-                    {"video" in item ? content.label : content.comingSoonLabel}
-                  </span>
-                </div>
+               {"video" in item && (
+  <div className="absolute left-4 top-4">
+    <span className="inline-flex rounded-full border border-white/20 bg-black/25 px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.24em] text-white backdrop-blur-md">
+      {content.label}
+    </span>
+  </div>
+)}
               </div>
               <div className="bg-gradient-to-b from-white to-orange-50/60 p-5">
                 <h3 className="text-xl font-bold text-stone-900">{item.title}</h3>

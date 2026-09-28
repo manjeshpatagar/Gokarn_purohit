@@ -1,11 +1,13 @@
-"use client";
 
+"use client";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Button } from "./Button";
 import { Container } from "./Container";
 import { useLanguage } from "./LanguageProvider";
+
 
 export function Navbar() {
   const pathname = usePathname();
@@ -14,22 +16,31 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur">
-  <Container className="grid grid-cols-[auto_1fr_auto] items-center gap-2 py-1 sm:py-2">
-        <Link href="/" className="flex min-w-0 flex-1 items-center gap-3">
-          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-orange-100 text[10px] font-bold text-orange-700 sm:h-12 sm:w-12 sm:text-lg">
-            Om
-          </div>
+  <Container className="flex sm:min-h-[95px] items-center py-2 px-4">
+       <Link
+  href="/"
+  className="flex min-w-0 flex-1 items-center gap-3 xl:w-[330px] xl:flex-none xl:shrink-0"
+>
+         <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full sm:h-14 sm:w-14 xl:h-16 xl:w-16">
+  <Image
+    src="/images/kaivalya-logo.jpeg"
+    alt="Kaivalya Mukti Shetra Shetra Gokarna"
+    fill
+    className="object-cover"
+    priority
+  />
+</div>
           <div className="min-w-0">
             <p className="text-sm font-bold leading-tight text-stone-900 sm:text-lg">
               {t.brand.title}
             </p>
-           <p className="text-[8px] uppercase tracking-[0.12em] text-stone-500 sm:text-xs sm:tracking-[0.2em]">
+          <p className="text-[9px] uppercase tracking-[0.15em] text-stone-500 sm:text-xs sm:tracking-[0.2em]">
               {t.brand.subtitle}
             </p>
           </div>
         </Link>
 
-        <nav className="hidden items-center justify-center gap-1 xl:flex">
+        <nav className="hidden flex-1 items-center justify-center gap-1 xl:flex">
           {t.navLinks.map((link) => {
             const isActive = pathname === link.href;
 
@@ -49,7 +60,7 @@ export function Navbar() {
           })}
         </nav>
 
-        <div className="hidden items-center gap-2 xl:flex">
+       <div className="hidden w-[225px] shrink-0 items-center justify-end gap-3 xl:flex">
           <div className="flex rounded-full border border-orange-200 bg-orange-50 p-1">
             <button
               type="button"
@@ -66,7 +77,7 @@ export function Navbar() {
               EN
             </button>
           </div>
-          <Button href="/contact" className="px-3 py-2 text-xs">
+          <Button href="/contact" className="whitespace-nowrap px-5 py-3 text-sm">
           {t.common.connect}</Button>
         </div>
 
