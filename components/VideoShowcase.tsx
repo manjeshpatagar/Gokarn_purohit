@@ -71,14 +71,14 @@ export function VideoShowcase() {
           subtitle={content.subtitle}
           align="center"
         />
-        <div className="mt-12 grid gap-8 sm:grid-cols-2 xl:grid-cols-4">
+        <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
           {content.items.map((item, index) => (
             <article
               key={`${item.title}-${index}`}
               className="group overflow-hidden rounded-[2rem] border border-amber-100/80 bg-white shadow-[0_22px_55px_rgba(120,53,15,0.12)] transition duration-500 hover:-translate-y-2 hover:shadow-[0_30px_75px_rgba(120,53,15,0.18)]"
               style={{ animation: `videoFloat 5.4s ease-in-out ${index * 0.15}s infinite` }}
             >
-              <div className="relative h-[240px] sm:h-[260px] lg:h-[280px] overflow-hidden bg-stone-950">
+              <div className="relative aspect-video overflow-hidden bg-stone-950">
                 {"video" in item ? (
                   <video
                     src={item.video}
@@ -101,16 +101,14 @@ export function VideoShowcase() {
                     </div>
                   </>
                 )}
-               {"video" in item && (
-  <div className="absolute left-4 top-4">
-    <span className="inline-flex rounded-full border border-white/20 bg-black/25 px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.24em] text-white backdrop-blur-md">
-      {content.label}
-    </span>
-  </div>
-)}
+                <div className="absolute left-4 top-4">
+                  <span className="inline-flex rounded-full border border-white/20 bg-black/25 px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.24em] text-white backdrop-blur-md">
+                    {"video" in item ? content.label : content.comingSoonLabel}
+                  </span>
+                </div>
               </div>
-              <div className="bg-gradient-to-b from-white to-orange-50/60 p-7">
-               <h3 className="text-xl font-bold leading-tight text-stone-900"> {item.title}</h3>
+              <div className="bg-gradient-to-b from-white to-orange-50/60 p-5">
+                <h3 className="text-xl font-bold text-stone-900">{item.title}</h3>
               </div>
             </article>
           ))}
