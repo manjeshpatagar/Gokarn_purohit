@@ -15,11 +15,11 @@ export function Navbar() {
   const { lang, setLang, t } = useLanguage();
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur">
- <Container className="flex w-full min-w-0 items-center gap-2 px-4 py-2 sm:min-h-[95px] sm:px-6">
+    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur justify-items-center ">
+<Container className=" relative flex w-full max-w-[1800px] mx-auto min-w-0 items-center gap-2 sm:gap-8 px-4 py-2 sm:min-h-[95px] sm:px-6">
        <Link
   href="/"
-  className="flex shrink-0 items-center gap-2"
+  className="flex min-w-0 flex-1 items-center gap-2"
 >
          <div className="relative h-9 w-9 shrink-0 overflow-hidden rounded-full sm:h-14 sm:w-14 xl:h-16 xl:w-16">
   <Image
@@ -30,17 +30,17 @@ export function Navbar() {
     priority
   />
 </div>
-          <div className="min-w-0 overflow-hidden">
-            <p className="sm:whitespace-nowrap text-[11px] font-bold leading-tight text-stone-900 sm:text-sm">
+          <div className="min-w-0">
+            <p className="whitespace-nowrap text-[10px] font-bold leading-tight text-stone-900 sm:text-sm">
   {t.brand.title}
 </p>
-          <p className="hidden sm:block text-xs uppercase tracking-[0.2em] text-stone-500">
+          <p className="hidden sm:block text-[10px] uppercase tracking-[0.2em] text-stone-500">
   {t.brand.subtitle}
 </p>
           </div>
         </Link>
 
-        <nav className="hidden flex-1 items-center justify-center gap-1 xl:flex">
+        <nav className="absolute left-[53%] hidden -translate-x-1/2 items-center justify-center gap-6 xl:flex">
           {t.navLinks.map((link) => {
             const isActive = pathname === link.href;
 
@@ -102,14 +102,14 @@ export function Navbar() {
               <button
                 type="button"
                 onClick={() => setLang("kn")}
-                className={`flex-1 rounded-full px-3 py-2 text-xs font-semibold transition ${lang === "kn" ? "bg-orange-600 text-white" : "text-orange-700"}`}
+                className={`flex-1 rounded-full px-3 py-2 text-[10px] font-semibold transition ${lang === "kn" ? "bg-orange-600 text-white" : "text-orange-700"}`}
               >
                 ಕನ್ನಡ
               </button>
               <button
                 type="button"
                 onClick={() => setLang("en")}
-                className={`flex-1 rounded-full px-3 py-2 text-xs font-semibold transition ${lang === "en" ? "bg-orange-600 text-white" : "text-orange-700"}`}
+                className={`flex-1 rounded-full px-3 py-2 text-[10px] font-semibold transition ${lang === "en" ? "bg-orange-600 text-white" : "text-orange-700"}`}
               >
                 EN
               </button>
@@ -132,7 +132,7 @@ export function Navbar() {
                 </Link>
               );
             })}
-            <Button href="/contact" className="mt-4 w-full py-2 text-xs" variant="primary">
+            <Button href="/contact" className="mt-4 w-full py-2 text-[10px]" variant="primary">
               {t.common.connect}
             </Button>
           </Container>
