@@ -143,7 +143,7 @@ export function HomePageClient() {
             subtitle={popularPoojas.subtitle}
             align="center"
           />
-          <div className="relative mt-12 grid gap-5 sm:grid-cols-2 xl:grid-cols-5">
+          <div className="relative mt-12 grid gap-6 sm:grid-cols-2 xl:grid-cols-5">
             {popularPoojas.items.map((pooja, index) => (
               <article
                 key={pooja.title}
