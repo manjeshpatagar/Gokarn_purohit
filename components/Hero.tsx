@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { Button } from "./Button";
 import { Container } from "./Container";
 import { useLanguage } from "./LanguageProvider";
+import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 
 const heroImages = [
   "/images/hero-gokarna-ganapati.jpeg",
@@ -65,7 +66,7 @@ export function Hero() {
       </div>
       <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(17,24,39,0.68),rgba(120,53,15,0.42))]" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(251,191,36,0.16),transparent_32%)]" />
-      <Container className="relative py-24 md:min-h-[720px] md:py-32 lg:flex lg:items-center">
+     <Container className="relative px-7 py-24 sm:px-8 md:min-h-[720px] md:py-32 lg:flex lg:items-center">
         <div className="max-w-3xl">
           <p className="mb-6 inline-flex rounded-full border border-amber-200/30 bg-black/25 px-4 py-2 text-[0.72rem] font-semibold uppercase tracking-[0.3em] text-orange-100 backdrop-blur-sm">
             {t.brand.subtitle}
@@ -94,9 +95,11 @@ export function Hero() {
             </span>
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <Button href={`tel:${t.contactDetails.phone}`}>{t.hero.callBtn}</Button>
-            <Button href={`https://wa.me/${t.contactDetails.phone.replace(/[^\d]/g, "")}`} variant="secondary">
-              {t.hero.whatsappBtn}
+            <Button href={`tel:${t.contactDetails.phone}`}>
+              <span className="flex items-center gap-1.5"><FaPhoneAlt size={18}/>{t.hero.callBtn}</span>
+            </Button>
+            <Button href={`https://wa.me/${t.contactDetails.phone.replace(/[^\d]/g, "")}`} variant="secondary" className="!bg-green-500 !text-white !border-none hover:!bg-green-500">
+              <span className="flex items-center gap-1"><FaWhatsapp size={22} color="white"/>{t.hero.whatsappBtn}</span>
             </Button>
           </div>
         </div>
