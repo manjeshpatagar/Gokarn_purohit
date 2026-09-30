@@ -246,9 +246,9 @@ export function PoojaPackejesPageClient() {
                 align="center" 
               /> 
  
-              <div className="mt-10 grid gap-6 lg:grid-cols-[1.35fr_0.95fr]"> 
+              <div className="mt-10 grid items-center gap-6 lg:grid-cols-[1.35fr_0.95fr]">
                 <article className="group overflow-hidden rounded-[2rem] border border-stone-200/80 bg-white shadow-[0_24px_80px_rgba(28,25,23,0.12)]"> 
-                  <div className="relative aspect-[16/11] overflow-hidden"> 
+                  <div className="relative aspect-[4/3] overflow-hidden lg:aspect-[16/11]">
                     <Image 
                       src={roomImages[0]} 
                       alt={roomContent.title} 
@@ -260,28 +260,27 @@ export function PoojaPackejesPageClient() {
  
                     <div className="absolute inset-0 bg-gradient-to-t from-stone-950/70 via-stone-950/15 to-transparent" /> 
  
-                    <div className="absolute left-5 top-5 inline-flex rounded-full border border-white/20 bg-black/25 px-4 py-2 text-[0.7rem] font-semibold uppercase tracking-[0.26em] text-white backdrop-blur-md"> 
+                    <div className="absolute left-3 top-3 inline-flex rounded-full border border-white/20 bg-black/25 px-3 py-1.5 text-[0.6rem] font-semibold uppercase tracking-[0.2em] text-white backdrop-blur-md sm:left-5 sm:top-5 sm:px-4 sm:py-2 sm:text-[0.7rem] sm:tracking-[0.26em] "> 
                       {roomContent.badge} 
                     </div> 
- 
-                    <div className="absolute inset-x-0 bottom-0 p-6 text-white sm:p-7"> 
-                      <h3 className="text-2xl font-bold"> 
-                        {roomContent.featureTitle} 
-                      </h3> 
- 
-                      <p className="mt-3 max-w-2xl text-sm leading-7 text-orange-50/90"> 
-                        {roomContent.featureBody} 
-                      </p> 
-                    </div> 
+ <div className="absolute inset-x-0 bottom-0 p-3 text-white sm:p-7">
+ <h3 className="max-w-[95%] text-[15px] font-bold leading-[1.15] max-[374px]:line-clamp-2 max-[374px]:text-[14px] sm:max-w-2xl sm:text-2xl">
+  {roomContent.featureTitle}
+</h3>
+
+   <p className="mt-1.5 max-w-[95%] text-[10px] leading-[1.25rem] text-orange-50/90 max-[374px]:line-clamp-3 max-[374px]:text-[9px] max-[374px]:leading-[1.1rem] sm:mt-3 sm:max-w-2xl sm:text-sm sm:leading-7">
+    {roomContent.featureBody}
+  </p>
+</div>
                   </div> 
                 </article> 
-                <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-2"> 
+                <div className="grid items-center grid-cols-2 grid-rows-2 gap-4">
                   {roomImages.slice(1).map((image, index) => ( 
                     <article 
                       key={image} 
                       className="group overflow-hidden rounded-[1.6rem] border border-amber-100 bg-white/90 shadow-[0_20px_55px_rgba(120,53,15,0.1)] backdrop-blur-sm" 
                     > 
-                      <div className="relative aspect-[4/3] overflow-hidden"> 
+                      <div className="relative aspect-[4/3] overflow-hidden">
                         <Image 
                           src={image} 
                           alt={`${roomContent.title} ${index + 2}`} 
