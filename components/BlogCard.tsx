@@ -4,6 +4,7 @@ type BlogCardProps = {
   description: string;
   eyebrow?: string;
   imagePosition?: string;
+  isThirdCard?: boolean;
 };
 
 export function BlogCard({
@@ -12,9 +13,10 @@ export function BlogCard({
   description,
   eyebrow = "Puja Guide",
   imagePosition = "center",
+  isThirdCard = false,
 }: BlogCardProps) {
   return (
-    <article className="group overflow-hidden rounded-[2rem] border border-amber-100/80 bg-white shadow-[0_24px_60px_rgba(120,53,15,0.12)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_30px_80px_rgba(120,53,15,0.18)]">
+    <article className="group flex h-full flex-col overflow-hidden rounded-[2rem] border border-amber-100/80 bg-white shadow-[0_24px_60px_rgba(120,53,15,0.12)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_30px_80px_rgba(120,53,15,0.18)]">
       <div className="relative aspect-[4/3] overflow-hidden">
         <img
           src={image}
@@ -34,9 +36,9 @@ export function BlogCard({
           </h3>
         </div>
       </div>
-      <div className="bg-gradient-to-b from-white to-orange-50/55 p-6">
+      <div className="flex flex-1 flex-col bg-gradient-to-b from-white to-orange-50/55 p-6 md:max-xl:p-7">
         <p className="text-sm leading-7 text-stone-600">{description}</p>
-        <div className="mt-5 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.24em] text-orange-700">
+        <div className="mt-3 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.24em] text-orange-700">
           <span className="h-px w-10 bg-orange-300" />
           Ritual Guide
         </div>

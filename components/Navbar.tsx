@@ -1,5 +1,6 @@
-"use client";
 
+"use client";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -7,28 +8,39 @@ import { Button } from "./Button";
 import { Container } from "./Container";
 import { useLanguage } from "./LanguageProvider";
 
+
 export function Navbar() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const { lang, setLang, t } = useLanguage();
 
   return (
-    <header className="sticky top-0 z-50 border-b border-orange-100 bg-white/95 backdrop-blur">
-      <Container className="grid grid-cols-[auto_1fr_auto] items-center gap-4 py-3 sm:py-4">
-        <Link href="/" className="flex min-w-0 items-center gap-4">
-          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-orange-100 text-base font-bold text-orange-700 sm:h-12 sm:w-12 sm:text-lg">
-            Om
-          </div>
+    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur justify-items-center ">
+<Container className=" relative flex w-full max-w-[1800px] mx-auto min-w-0 items-center gap-2 sm:gap-8 px-4 py-2 sm:min-h-[95px] sm:px-6">
+       <Link
+  href="/"
+  className="flex min-w-0 flex-1 items-center gap-2"
+>
+         <div className="relative h-9 w-9 shrink-0 overflow-hidden rounded-full sm:h-14 sm:w-14 xl:h-16 xl:w-16">
+  <Image
+    src="/images/kaivalya-logo.jpeg"
+    alt="Kaivalya Mukti Shetra Shetra Gokarna"
+    fill
+    className="object-cover"
+    priority
+  />
+</div>
           <div className="min-w-0">
-            <p className="whitespace-nowrap text-base font-bold text-stone-900 sm:text-lg">{t.brand.title}
-            </p>
-            <p className="whitespace-nowrap text-[10px] uppercase tracking-[0.2em] text-stone-500 sm:text-xs sm:tracking-[0.24em]">
-              {t.brand.subtitle}
-            </p>
+            <p className="whitespace-nowrap text-[10px] font-bold leading-tight text-stone-900 sm:text-sm">
+  {t.brand.title}
+</p>
+          <p className="hidden sm:block text-[10px] uppercase tracking-[0.2em] text-stone-500">
+  {t.brand.subtitle}
+</p>
           </div>
         </Link>
 
-        <nav className="hidden items-center justify-center gap-2 lg:flex">
+        <nav className="absolute left-[53%] hidden -translate-x-1/2 items-center justify-center gap-6 xl:flex">
           {t.navLinks.map((link) => {
             const isActive = pathname === link.href;
 
@@ -48,32 +60,33 @@ export function Navbar() {
           })}
         </nav>
 
-        <div className="hidden items-center gap-2 lg:flex">
+       <div className="hidden w-[225px] shrink-0 items-center justify-end gap-3 xl:flex">
           <div className="flex rounded-full border border-orange-200 bg-orange-50 p-1">
             <button
               type="button"
               onClick={() => setLang("kn")}
-              className={`rounded-full px-3 py-2 text-xs font-semibold transition ${lang === "kn" ? "bg-orange-600 text-white" : "text-orange-700"}`}
+              className={`rounded-full px-2 py-1 text-[10px] font-semibold transition ${lang === "kn" ? "bg-orange-600 text-white" : "text-orange-700"}`}
             >
               ಕನ್ನಡ
             </button>
             <button
               type="button"
               onClick={() => setLang("en")}
-              className={`rounded-full px-3 py-2 text-xs font-semibold transition ${lang === "en" ? "bg-orange-600 text-white" : "text-orange-700"}`}
+              className={`rounded-full px-2 py-1 text-[10px] font-semibold transition ${lang === "en" ? "bg-orange-600 text-white" : "text-orange-700"}`}
             >
               EN
             </button>
           </div>
-          <Button href="/contact">{t.common.connect}</Button>
+          <Button href="/contact" className="whitespace-nowrap px-5 py-3 text-sm">
+          {t.common.connect}</Button>
         </div>
 
         <button
-          type="button"
-          onClick={() => setIsOpen((value) => !value)}
-          className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-orange-200 text-stone-700 lg:hidden"
-          aria-label={lang === "kn" ? "ಮೆನು ತೆರೆಯಿರಿ" : "Toggle menu"}
-        >
+  type="button"
+  onClick={() => setIsOpen((value) => !value)}
+  className="ml-auto flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-orange-200 text-stone-700 xl:hidden"
+  aria-label={lang === "kn" ? "ಮೆನು ತೆರೆಯಿರಿ" : "Toggle menu"}
+>
           <span className="space-y-1.5">
             <span className="block h-0.5 w-5 bg-current" />
             <span className="block h-0.5 w-5 bg-current" />
@@ -83,20 +96,20 @@ export function Navbar() {
       </Container>
 
       {isOpen ? (
-        <div className="border-t border-orange-100 bg-white lg:hidden">
+        <div className="border-t border-orange-100 bg-white xl:hidden">
           <Container className="flex max-h-[70vh] flex-col overflow-y-auto py-4">
             <div className="mb-4 flex rounded-full border border-orange-200 bg-orange-50 p-1">
               <button
                 type="button"
                 onClick={() => setLang("kn")}
-                className={`flex-1 rounded-full px-3 py-2 text-xs font-semibold transition ${lang === "kn" ? "bg-orange-600 text-white" : "text-orange-700"}`}
+                className={`flex-1 rounded-full px-3 py-2 text-[10px] font-semibold transition ${lang === "kn" ? "bg-orange-600 text-white" : "text-orange-700"}`}
               >
                 ಕನ್ನಡ
               </button>
               <button
                 type="button"
                 onClick={() => setLang("en")}
-                className={`flex-1 rounded-full px-3 py-2 text-xs font-semibold transition ${lang === "en" ? "bg-orange-600 text-white" : "text-orange-700"}`}
+                className={`flex-1 rounded-full px-3 py-2 text-[10px] font-semibold transition ${lang === "en" ? "bg-orange-600 text-white" : "text-orange-700"}`}
               >
                 EN
               </button>
@@ -119,7 +132,7 @@ export function Navbar() {
                 </Link>
               );
             })}
-            <Button href="/contact" className="mt-4 w-full" variant="primary">
+            <Button href="/contact" className="mt-4 w-full py-2 text-[10px]" variant="primary">
               {t.common.connect}
             </Button>
           </Container>

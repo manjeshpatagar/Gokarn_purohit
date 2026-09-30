@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-
 import { AboutSection } from "@/components/AboutSection";
 import { BookingForm } from "@/components/BookingForm";
 import { Container } from "@/components/Container";
