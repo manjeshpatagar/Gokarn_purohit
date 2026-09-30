@@ -232,7 +232,7 @@ export function PoojaPackejesPageClient() {
           </div> 
         </Container> 
       </section> 
-      <section className="bg-white py-16"> 
+      <section className="bg-white"> 
         <Container> 
           <div className="relative overflow-hidden rounded-[2.25rem] border-amber-100/80 bg-[linear-gradient(135deg,rgba(255,251,235,0.94),rgba(255,255,255,0.98))] p-6 shadow-[0_30px_90px_rgba(120,53,15,0.12)] sm:p-8"> 
             <div className="absolute right-0 top-0 h-40 w-40 rounded-full bg-orange-200/30 blur-3xl" /> 
