@@ -57,7 +57,7 @@ export function PujaServicesPageClient() {
             {t.servicesList.map((service, index) => (
               <article
                 key={service}
-                className="group overflow-hidden rounded-[1.9rem] border border-orange-100 bg-white shadow-[0_20px_55px_rgba(120,53,15,0.1)] transition duration-500 hover:-translate-y-2 hover:border-orange-300 hover:shadow-[0_28px_70px_rgba(120,53,15,0.16)]"
+                className="group overflow-hidden rounded-[1.9rem] border border-orange-100 bg-orange-50/70 shadow-[0_20px_55px_rgba(120,53,15,0.1)] transition duration-500 hover:-translate-y-2 hover:border-orange-300 hover:shadow-[0_28px_70px_rgba(120,53,15,0.16)]"
                 style={{ animation: `serviceFloat 5s ease-in-out ${index * 0.14}s infinite` }}
               >
                 <div className="relative overflow-hidden">
