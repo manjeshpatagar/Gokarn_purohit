@@ -18,22 +18,21 @@ export function ReviewCard({ name, rating, text, location, service }: ReviewCard
     <article className="group w-full min-w-0 overflow-hidden rounded-[2rem] border border-amber-100/80 bg-white p-5 shadow-[0_18px_50px_rgba(120,53,15,0.1)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_24px_65px_rgba(120,53,15,0.16)] sm:p-6">
       <div className="flex min-w-0 items-start justify-between gap-3">
         <div className="flex min-w-0 items-center gap-3">
-          <div className="flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-orange-500 via-amber-400 to-yellow-300 text-base font-bold text-white shadow-[0_10px_24px_rgba(120,53,15,0.28)]">
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-orange-500 via-amber-400 to-yellow-300 text-sm font-bold text-white shadow-[0_10px_24px_rgba(120,53,15,0.28)] sm:h-14 sm:w-14 sm:text-base">
             {initials}
           </div>
           <div className="min-w-0">
-  <h3 className="break-words text-lg font-semibold text-stone-900">
-    {name}
-  </h3>
-
-  {location ? (
-    <p className="mt-1 text-xs font-medium uppercase tracking-[0.18em] text-orange-600">
-      {location}
-    </p>
-  ) : null}
-</div>
+            <h3 className="break-words text-base font-semibold text-stone-900 sm:text-lg">
+              {name}
+            </h3>
+            {location ? (
+            <p className="mt-1 text-xs font-medium uppercase tracking-[0.18em] text-orange-600">
+            {location}
+            </p>
+            ) : null}
+          </div>
         </div>
-        <div className="shrink-0 rounded-full bg-orange-50 px-2.5 py-2 text-sm text-orange-500 shadow-inner sm:px-3">
+        <div className="shrink-0 rounded-full bg-orange-50 px-1.5 py-1.5 text-xs text-orange-500 shadow-inner sm:px-3 sm:py-2 sm:text-sm">
           {Array.from({ length: rating }, () => "★").join("")}
         </div>
       </div>

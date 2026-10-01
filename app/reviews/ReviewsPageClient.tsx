@@ -47,6 +47,7 @@ export function ReviewsPageClient() {
           {t.reviewsData.map((review, index) => (
             <div
               key={review.name}
+              className="min-w-0 w-full"
               style={{ animation: `reviewFloat 5.5s ease-in-out ${index * 0.16}s infinite` }}
             >
               <ReviewCard {...review} />
