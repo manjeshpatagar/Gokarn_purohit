@@ -235,16 +235,16 @@ export function HomePageClient() {
             subtitle={t.home.areasSubtitle}
             align="center"
           />
-          <div className="mx-auto mt-10 max-w-4xl overflow-hidden rounded-[2rem] border border-amber-100/80 bg-white shadow-[0_24px_70px_rgba(120,53,15,0.12)]">
+          <div className="mx-auto mt-10 max-w-4xl lg:max-w-6xl lg:h-[400px] overflow-hidden rounded-[2rem] border border-amber-100/80 bg-white shadow-[0_24px_70px_rgba(120,53,15,0.12)]">
             <div className="grid items-center gap-0 md:grid-cols-[0.95fr_1.05fr]">
                 <div className="overflow-hidden">
                   <img
                     src="/images/gokarna-om-beach.jpeg"
                     alt="Gokarna temple spiritual atmosphere"
-                    className="aspect-[4/3] h-full w-full object-cover"
+                    className="aspect-[3/3] h-full w-full object-cover"
                   />
               </div>
-              <div className="p-6 sm:p-8">
+              <div className="p-6 sm:p-8 lg:-translate-y-12">
                 <p className="text-xs font-semibold uppercase tracking-[0.24em] text-orange-600">
                   {sacredPlaceLabel}
                 </p>

@@ -42,7 +42,7 @@ export function ServicesSection() {
               {t.common.allServices}
             </Button>
           </div>
-          <div className="relative overflow-hidden rounded-[2rem] border border-amber-100/80 bg-white/70 p-3 shadow-[0_26px_80px_rgba(120,53,15,0.12)] backdrop-blur-sm">
+          <div className="relative overflow-hidden rounded-[2rem] border border-amber-100/80 bg-white/70 p-3 shadow-[0_26px_80px_rgba(120,53,15,0.12)] backdrop-blur-sm lg:-translate-y-96 xl:-translate-y-64">
             <div className="absolute inset-x-6 top-6 z-10 rounded-[1.25rem] border border-white/15 bg-black/20 px-4 py-3 backdrop-blur-sm">
               <p className="text-xs font-semibold uppercase tracking-[0.24em] text-orange-100">
                 {sectionBadge}
