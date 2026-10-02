@@ -106,7 +106,7 @@ export function AboutPageClient() {
         </Container>
       </section>
 
-      <section className="bg-gray-50 py-16">
+      <section className="bg-gray-50 py-4">
         <Container className="max-w-4xl">
           <SectionTitle
             eyebrow={t.common.contact}
