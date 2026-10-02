@@ -67,7 +67,7 @@ export function AboutPageClient() {
                   </div>
                 </div>
               </div>
-              <div className="mt-8 flex flex-wrap gap-4">
+              <div className="mt-8 flex flex-wrap justify-center gap-4">
                 <Button href={`tel:${t.contactDetails.phone}`}>📞 Call Now</Button>
                 <Button href="/contact" variant="secondary">
                   Contact Details
@@ -106,7 +106,7 @@ export function AboutPageClient() {
         </Container>
       </section>
 
-      <section className="bg-gray-50 py-16">
+      <section className="bg-gray-50 py-4">
         <Container className="max-w-4xl">
           <SectionTitle
             eyebrow={t.common.contact}
