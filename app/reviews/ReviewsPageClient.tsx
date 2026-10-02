@@ -15,7 +15,7 @@ export function ReviewsPageClient() {
     t.reviewsData.reduce((total, review) => total + review.rating, 0) / t.reviewsData.length;
 
   return (
-    <section className="relative overflow-hidden bg-[linear-gradient(180deg,#fffaf5_0%,#fff7ed_32%,#ffffff_100%)] py-16 md:py-20">
+   <section className="relative overflow-hidden bg-[linear-gradient(180deg,#fffaf5_0%,#fff7ed_32%,#ffffff_100%)] pt-16 pb-0 md:pt-20 md:pb-0">
       <div className="absolute inset-x-0 top-0 h-64 bg-[radial-gradient(circle_at_top,rgba(251,191,36,0.18),transparent_56%)]" />
       <Container className="max-w-5xl">
         <div className="relative">
