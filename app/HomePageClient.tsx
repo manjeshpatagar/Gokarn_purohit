@@ -244,7 +244,7 @@ export function HomePageClient() {
                     className="aspect-[3/3] h-full w-full object-cover"
                   />
               </div>
-              <div className="flex h-full flex-col justify-center p-6 sm:p-8 lg:p-10">
+              <div className="flex h-full flex-col justify-center gap-[5px] p-6 sm:p-8 lg:p-10">
                 <p className="text-xs font-semibold uppercase tracking-[0.24em] text-orange-600">
                   {sacredPlaceLabel}
                 </p>
