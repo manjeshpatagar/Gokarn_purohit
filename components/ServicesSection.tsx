@@ -18,7 +18,7 @@ export function ServicesSection() {
     <section className="relative overflow-hidden bg-[linear-gradient(180deg,#fff8f1_0%,#fff4e8_38%,#ffffff_100%)] py-16 md:py-20">
       <div className="absolute inset-x-0 top-0 h-64 bg-[radial-gradient(circle_at_top,rgba(251,191,36,0.18),transparent_58%)]" />
       <Container>
-        <div className="grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
+        <div className="grid items-start gap-10 lg:grid-cols-[1.05fr_0.95fr]">
           <div className="relative rounded-[2rem] border border-amber-100/80 bg-white/80 p-6 shadow-[0_24px_70px_rgba(120,53,15,0.1)] backdrop-blur-sm sm:p-8">
             <SectionTitle
               eyebrow={t.servicesSection.eyebrow}
@@ -42,7 +42,7 @@ export function ServicesSection() {
               {t.common.allServices}
             </Button>
           </div>
-          <div className="relative overflow-hidden rounded-[2rem] border border-amber-100/80 bg-white/70 p-3 shadow-[0_26px_80px_rgba(120,53,15,0.12)] backdrop-blur-sm">
+          <div className="relative overflow-hidden rounded-[2rem] border border-amber-100/80 bg-white/70 p-3 shadow-[0_26px_80px_rgba(120,53,15,0.12)] backdrop-blur-sm lg:-translate-y-[0px]">
             <div className="absolute inset-x-6 top-6 z-10 rounded-[1.25rem] border border-white/15 bg-black/20 px-4 py-3 backdrop-blur-sm">
               <p className="text-xs font-semibold uppercase tracking-[0.24em] text-orange-100">
                 {sectionBadge}
