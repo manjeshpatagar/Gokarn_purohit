@@ -9,7 +9,7 @@ import { blogs } from "@/lib/data";
 const guideImagePositions = [
   "center",
   "center",
-  "center",
+  "center 20%",
   "center 20%",
   "center 18%",
   "center",
@@ -19,7 +19,7 @@ export function PujaGuidePageClient() {
   const { t } = useLanguage();
 
   return (
-    <section className="relative overflow-hidden bg-[linear-gradient(180deg,#fff8f1_0%,#fffaf5_38%,#fff_100%)] py-16 md:py-20">
+    <section className="relative overflow-hidden bg-[linear-gradient(180deg,#fff8f1_0%,#fffaf5_38%,#fff_100%)] pt-16 pb-0 md:py-20">
       <div className="absolute inset-x-0 top-0 h-64 bg-[radial-gradient(circle_at_top,rgba(251,191,36,0.18),transparent_58%)]" />
       <Container>
         <div className="relative">
@@ -37,6 +37,7 @@ export function PujaGuidePageClient() {
               image={blog.image}
               eyebrow={t.navLinks[1].label}
               imagePosition={guideImagePositions[index]}
+              isThirdCard={index === 2}
               {...t.blogsData[index]}
             />
           ))}

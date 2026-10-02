@@ -173,7 +173,7 @@ export function Gallery() {
           {content.items.map((item, index) => (
             <article
               key={`${item.title}-${index}`}
-              className="group overflow-hidden rounded-[2rem] border border-amber-100/80 bg-white shadow-[0_22px_55px_rgba(120,53,15,0.12)] transition duration-500 hover:-translate-y-2 hover:shadow-[0_30px_75px_rgba(120,53,15,0.18)]"
+              className="group flex h-full flex-col overflow-hidden rounded-[2rem] border border-amber-100/80 bg-white shadow-[0_22px_55px_rgba(120,53,15,0.12)] transition duration-500 hover:-translate-y-2 hover:shadow-[0_30px_75px_rgba(120,53,15,0.18)]"
               style={{ animation: `galleryFloat 5.6s ease-in-out ${index * 0.16}s infinite` }}
             >
               <div className="relative aspect-[4/5] overflow-hidden">
@@ -198,7 +198,7 @@ export function Gallery() {
                   </h3>
                 </div>
               </div>
-              <div className="bg-gradient-to-b from-white to-orange-50/60 p-5">
+              <div className="flex min-h-[110px] flex-1 bg-gradient-to-b from-white to-orange-50/60 p-5">
                 <p className="text-sm leading-7 text-stone-600">{item.subtitle}</p>
               </div>
             </article>
