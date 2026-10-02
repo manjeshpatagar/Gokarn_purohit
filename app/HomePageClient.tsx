@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-
 import { AboutSection } from "@/components/AboutSection";
 import { BookingForm } from "@/components/BookingForm";
 import { Container } from "@/components/Container";
@@ -137,7 +136,7 @@ export function HomePageClient() {
 
       <section className="relative overflow-hidden bg-[linear-gradient(180deg,#fffaf5_0%,#fff5eb_36%,#ffffff_100%)] py-16">
         <div className="absolute inset-x-0 top-0 h-56 bg-[radial-gradient(circle_at_top,rgba(251,191,36,0.18),transparent_58%)]" />
-        <Container>
+        <Container className="max-w-[1600px]">
           <SectionTitle
             eyebrow={popularPoojas.eyebrow}
             title={popularPoojas.title}
@@ -148,7 +147,7 @@ export function HomePageClient() {
             {popularPoojas.items.map((pooja, index) => (
               <article
                 key={pooja.title}
-                className="group relative overflow-hidden rounded-[2rem] border border-amber-100/80 bg-white shadow-[0_22px_55px_rgba(120,53,15,0.12)] transition duration-500 hover:-translate-y-2 hover:shadow-[0_30px_75px_rgba(120,53,15,0.18)]"
+                className="group relative flex h-full flex-col overflow-hidden rounded-[2rem] border border-amber-100/80 bg-white shadow-[0_22px_55px_rgba(120,53,15,0.12)] transition duration-500 hover:-translate-y-2 hover:shadow-[0_30px_75px_rgba(120,53,15,0.18)]"
                 style={{ animation: `popularPoojaFloat 5.4s ease-in-out ${index * 0.18}s infinite` }}
               >
                 <div className="absolute inset-x-5 top-5 z-20 flex items-center justify-between">
@@ -173,10 +172,10 @@ export function HomePageClient() {
                     </h3>
                   </div>
                 </div>
-                <div className="relative bg-gradient-to-b from-white to-orange-50/70 p-5">
+                <div className="relative flex flex-1 flex-col bg-gradient-to-b from-white to-orange-50/70 p-5">
                   <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-amber-300 to-transparent" />
                   <p className="text-sm leading-7 text-stone-600">{pooja.description}</p>
-                  <div className="mt-4 flex items-center gap-3 text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-orange-700">
+                  <div className="mt-auto flex items-center gap-3 pt-4 text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-orange-700">
                     <span className="h-px w-10 bg-orange-300" />
                     {popularPoojas.choiceLabel}
                   </div>
