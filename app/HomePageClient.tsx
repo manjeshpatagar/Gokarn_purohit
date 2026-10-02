@@ -236,7 +236,7 @@ export function HomePageClient() {
             align="center"
           />
           <div className="mx-auto mt-10 max-w-4xl lg:max-w-6xl lg:h-[400px] overflow-hidden rounded-[2rem] border border-amber-100/80 bg-white shadow-[0_24px_70px_rgba(120,53,15,0.12)]">
-            <div className="grid items-center gap-0 md:grid-cols-[0.95fr_1.05fr]">
+            <div className="grid h-full gap-0 md:grid-cols-[0.95fr_1.05fr]">
                 <div className="overflow-hidden">
                   <img
                     src="/images/gokarna-om-beach.jpeg"
@@ -244,7 +244,7 @@ export function HomePageClient() {
                     className="aspect-[3/3] h-full w-full object-cover"
                   />
               </div>
-              <div className="p-6 sm:p-8 lg:-translate-y-12">
+              <div className="flex h-full flex-col justify-center p-6 sm:p-8 lg:p-10">
                 <p className="text-xs font-semibold uppercase tracking-[0.24em] text-orange-600">
                   {sacredPlaceLabel}
                 </p>
@@ -254,7 +254,7 @@ export function HomePageClient() {
                 <p className="mt-5 text-sm leading-7 text-stone-600 sm:text-base sm:leading-8">
                   {gokarnaAreaBody}
                 </p>
-                <div className="mt-6 inline-flex rounded-full border border-orange-100 bg-orange-50 px-4 py-2 text-sm font-semibold text-orange-700">
+                <div className="mt-6 self-start inline-flex rounded-full border border-orange-100 bg-orange-50 px-4 py-2 text-sm font-semibold text-orange-700">
                   {templeAreaLabel}
                 </div>
               </div>
