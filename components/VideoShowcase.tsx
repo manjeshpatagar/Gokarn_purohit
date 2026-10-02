@@ -64,7 +64,7 @@ export function VideoShowcase() {
   return (
     <section className="relative overflow-hidden bg-[linear-gradient(180deg,#fff8f1_0%,#fff4ea_42%,#ffffff_100%)] py-16 md:py-20">
       <div className="absolute inset-x-0 top-0 h-56 bg-[radial-gradient(circle_at_top,rgba(251,191,36,0.16),transparent_56%)]" />
-      <Container>
+      <Container className="lg:max-w-[1400px]">
         <SectionTitle
           eyebrow={content.eyebrow}
           title={content.title}

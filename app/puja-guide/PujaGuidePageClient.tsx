@@ -32,6 +32,7 @@ export function PujaGuidePageClient() {
         </div>
         <div className="relative mt-12 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
           {blogs.map((blog, index) => (
+            <div className={index === blogs.length - 1 ? "pb-12 md:pb-0" : ""}>
             <BlogCard
               key={blog.title}
               image={blog.image}
@@ -40,6 +41,7 @@ export function PujaGuidePageClient() {
               isThirdCard={index === 2}
               {...t.blogsData[index]}
             />
+            </div>
           ))}
         </div>
       </Container>

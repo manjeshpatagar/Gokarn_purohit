@@ -21,7 +21,7 @@ export function Navbar() {
   href="/"
   className="flex min-w-0 flex-1 items-center gap-2"
 >
-         <div className="relative h-9 w-9 shrink-0 overflow-hidden rounded-full sm:h-14 sm:w-14 xl:h-16 xl:w-16">
+         <div className="relative h-9 w-9 shrink-0 overflow-hidden rounded-full sm:h-10 sm:w-10 xl:h-10 xl:w-10">
   <Image
     src="/images/kaivalya-logo.jpeg"
     alt="Kaivalya Mukti Shetra Shetra Gokarna"
